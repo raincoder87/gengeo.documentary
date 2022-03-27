@@ -1,0 +1,1519 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>src package &#8212; genGEO Documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tests package" href="tests.html" />
+    <link rel="prev" title="models package" href="models.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.jpg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="examples/notebook.html">
+   Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tutorials.html">
+   Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="modules.html">
+   genGEO
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="models.html">
+     models package
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     src package
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tests.html">
+     tests package
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="utils.html">
+     utils package
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/src.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/GEG-ETHZ/genGEO"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/GEG-ETHZ/genGEO/issues/new?title=Issue%20on%20page%20%2Fsrc.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/GEG-ETHZ/genGEO/edit/master/docs/src.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submodules">
+   Submodules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostExploration">
+   src.capitalCostExploration module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostSurfacePipes">
+   src.capitalCostSurfacePipes module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostSurfacePlantCPG">
+   src.capitalCostSurfacePlantCPG module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostSurfacePlantORC">
+   src.capitalCostSurfacePlantORC module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostSystem">
+   src.capitalCostSystem module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostWell">
+   src.capitalCostWell module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostWellField">
+   src.capitalCostWellField module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostWellStimulation">
+   src.capitalCostWellStimulation module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.coolingCondensingTower">
+   src.coolingCondensingTower module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.downholePump">
+   src.downholePump module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.energyConversion">
+   src.energyConversion module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fluidSystemCO2">
+   src.fluidSystemCO2 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fluidSystemWater">
+   src.fluidSystemWater module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fluidSystemWaterSolver">
+   src.fluidSystemWaterSolver module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystem">
+   src.fullSystem module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemCPG">
+   src.fullSystemCPG module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemORC">
+   src.fullSystemORC module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemOptMdotBase">
+   src.fullSystemOptMdotBase module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemSolver">
+   src.fullSystemSolver module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemSolverBase">
+   src.fullSystemSolverBase module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemSolverNM">
+   src.fullSystemSolverNM module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemSolverPeakIterator">
+   src.fullSystemSolverPeakIterator module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.heatExchanger">
+   src.heatExchanger module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.heatExchangerOptMdot">
+   src.heatExchangerOptMdot module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.lCOESimple">
+   src.lCOESimple module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.oRCCycleSupercritPboil">
+   src.oRCCycleSupercritPboil module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.oRCCycleTboil">
+   src.oRCCycleTboil module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.porousReservoir">
+   src.porousReservoir module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.porousReservoirBase">
+   src.porousReservoirBase module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.porousReservoirResults">
+   src.porousReservoirResults module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.powerPlantOutput">
+   src.powerPlantOutput module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.semiAnalyticalWell">
+   src.semiAnalyticalWell module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.semiAnalyticalWellResults">
+   src.semiAnalyticalWellResults module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src">
+   Module contents
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>src package</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submodules">
+   Submodules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostExploration">
+   src.capitalCostExploration module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostSurfacePipes">
+   src.capitalCostSurfacePipes module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostSurfacePlantCPG">
+   src.capitalCostSurfacePlantCPG module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostSurfacePlantORC">
+   src.capitalCostSurfacePlantORC module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostSystem">
+   src.capitalCostSystem module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostWell">
+   src.capitalCostWell module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostWellField">
+   src.capitalCostWellField module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.capitalCostWellStimulation">
+   src.capitalCostWellStimulation module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.coolingCondensingTower">
+   src.coolingCondensingTower module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.downholePump">
+   src.downholePump module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.energyConversion">
+   src.energyConversion module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fluidSystemCO2">
+   src.fluidSystemCO2 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fluidSystemWater">
+   src.fluidSystemWater module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fluidSystemWaterSolver">
+   src.fluidSystemWaterSolver module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystem">
+   src.fullSystem module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemCPG">
+   src.fullSystemCPG module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemORC">
+   src.fullSystemORC module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemOptMdotBase">
+   src.fullSystemOptMdotBase module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemSolver">
+   src.fullSystemSolver module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemSolverBase">
+   src.fullSystemSolverBase module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemSolverNM">
+   src.fullSystemSolverNM module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.fullSystemSolverPeakIterator">
+   src.fullSystemSolverPeakIterator module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.heatExchanger">
+   src.heatExchanger module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.heatExchangerOptMdot">
+   src.heatExchangerOptMdot module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.lCOESimple">
+   src.lCOESimple module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.oRCCycleSupercritPboil">
+   src.oRCCycleSupercritPboil module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.oRCCycleTboil">
+   src.oRCCycleTboil module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.porousReservoir">
+   src.porousReservoir module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.porousReservoirBase">
+   src.porousReservoirBase module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.porousReservoirResults">
+   src.porousReservoirResults module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.powerPlantOutput">
+   src.powerPlantOutput module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.semiAnalyticalWell">
+   src.semiAnalyticalWell module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src.semiAnalyticalWellResults">
+   src.semiAnalyticalWellResults module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-src">
+   Module contents
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="src-package">
+<h1>src package<a class="headerlink" href="#src-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-src.capitalCostExploration">
+<span id="src-capitalcostexploration-module"></span><h2>src.capitalCostExploration module<a class="headerlink" href="#module-src.capitalCostExploration" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostExploration.CapitalCostExploration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostExploration.</span></span><span class="sig-name descname"><span class="pre">CapitalCostExploration</span></span><a class="reference internal" href="_modules/src/capitalCostExploration.html#CapitalCostExploration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.CapitalCostExploration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostExploration.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostExploration.CapitalCostExploration.cO2Baseline">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cO2Baseline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostExploration.html#CapitalCostExploration.cO2Baseline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.CapitalCostExploration.cO2Baseline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostExploration.CapitalCostExploration.cO2Ideal">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cO2Ideal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostExploration.html#CapitalCostExploration.cO2Ideal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.CapitalCostExploration.cO2Ideal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostExploration.CapitalCostExploration.waterBaseline">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">waterBaseline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostExploration.html#CapitalCostExploration.waterBaseline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.CapitalCostExploration.waterBaseline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostExploration.CapitalCostExploration.waterIdeal">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">waterIdeal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostExploration.html#CapitalCostExploration.waterIdeal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.CapitalCostExploration.waterIdeal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostExploration.aCO2AMA">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostExploration.</span></span><span class="sig-name descname"><span class="pre">aCO2AMA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostExploration.html#aCO2AMA"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.aCO2AMA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostExploration.cModeling">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostExploration.</span></span><span class="sig-name descname"><span class="pre">cModeling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostExploration.html#cModeling"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.cModeling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostExploration.dCCharacterizationWellsBaseline">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostExploration.</span></span><span class="sig-name descname"><span class="pre">dCCharacterizationWellsBaseline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">well_radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">success_rate</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostExploration.html#dCCharacterizationWellsBaseline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.dCCharacterizationWellsBaseline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostExploration.dCCharacterizationWellsIdeal">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostExploration.</span></span><span class="sig-name descname"><span class="pre">dCCharacterizationWellsIdeal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">well_radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">success_rate</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostExploration.html#dCCharacterizationWellsIdeal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.dCCharacterizationWellsIdeal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostExploration.dCModelingCO2">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostExploration.</span></span><span class="sig-name descname"><span class="pre">dCModelingCO2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostExploration.html#dCModelingCO2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostExploration.dCModelingCO2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-src.capitalCostSurfacePipes">
+<span id="src-capitalcostsurfacepipes-module"></span><h2>src.capitalCostSurfacePipes module<a class="headerlink" href="#module-src.capitalCostSurfacePipes" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostSurfacePipes.CapitalCostSurfacePipes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostSurfacePipes.</span></span><span class="sig-name descname"><span class="pre">CapitalCostSurfacePipes</span></span><a class="reference internal" href="_modules/src/capitalCostSurfacePipes.html#CapitalCostSurfacePipes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSurfacePipes.CapitalCostSurfacePipes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostSurfacePipes.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostSurfacePipes.CapitalCostSurfacePipes.cost">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cost</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostSurfacePipes.html#CapitalCostSurfacePipes.cost"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSurfacePipes.CapitalCostSurfacePipes.cost" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.capitalCostSurfacePlantCPG">
+<span id="src-capitalcostsurfaceplantcpg-module"></span><h2>src.capitalCostSurfacePlantCPG module<a class="headerlink" href="#module-src.capitalCostSurfacePlantCPG" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostSurfacePlantCPG.CapitalCostSurfacePlantCPG">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostSurfacePlantCPG.</span></span><span class="sig-name descname"><span class="pre">CapitalCostSurfacePlantCPG</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostSurfacePlantCPG.html#CapitalCostSurfacePlantCPG"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSurfacePlantCPG.CapitalCostSurfacePlantCPG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostSurfacePlantCPG.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostSurfacePlantCPG.CapitalCostSurfacePlantCPG.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">energy_results</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid_system</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostSurfacePlantCPG.html#CapitalCostSurfacePlantCPG.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSurfacePlantCPG.CapitalCostSurfacePlantCPG.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostSurfacePlantCPG.CapitalCostSurfacePlantCPGResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostSurfacePlantCPG.</span></span><span class="sig-name descname"><span class="pre">CapitalCostSurfacePlantCPGResults</span></span><a class="reference internal" href="_modules/src/capitalCostSurfacePlantCPG.html#CapitalCostSurfacePlantCPGResults"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSurfacePlantCPG.CapitalCostSurfacePlantCPGResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostSurfacePlantCPGResults.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.capitalCostSurfacePlantORC">
+<span id="src-capitalcostsurfaceplantorc-module"></span><h2>src.capitalCostSurfacePlantORC module<a class="headerlink" href="#module-src.capitalCostSurfacePlantORC" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostSurfacePlantORC.CapitalCostSurfacePlantORC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostSurfacePlantORC.</span></span><span class="sig-name descname"><span class="pre">CapitalCostSurfacePlantORC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostSurfacePlantORC.html#CapitalCostSurfacePlantORC"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSurfacePlantORC.CapitalCostSurfacePlantORC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostSurfacePlantORC.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostSurfacePlantORC.CapitalCostSurfacePlantORC.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">energy_results</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid_system</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostSurfacePlantORC.html#CapitalCostSurfacePlantORC.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSurfacePlantORC.CapitalCostSurfacePlantORC.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostSurfacePlantORC.CapitalCostSurfacePlantORCResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostSurfacePlantORC.</span></span><span class="sig-name descname"><span class="pre">CapitalCostSurfacePlantORCResults</span></span><a class="reference internal" href="_modules/src/capitalCostSurfacePlantORC.html#CapitalCostSurfacePlantORCResults"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSurfacePlantORC.CapitalCostSurfacePlantORCResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostSurfacePlantORCResults.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.capitalCostSystem">
+<span id="src-capitalcostsystem-module"></span><h2>src.capitalCostSystem module<a class="headerlink" href="#module-src.capitalCostSystem" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostSystem.CapitalCostSystem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostSystem.</span></span><span class="sig-name descname"><span class="pre">CapitalCostSystem</span></span><a class="reference internal" href="_modules/src/capitalCostSystem.html#CapitalCostSystem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSystem.CapitalCostSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostSystem.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostSystem.CapitalCostSystem.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostSystem.html#CapitalCostSystem.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSystem.CapitalCostSystem.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostSystem.CapitalCostSystemOutput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostSystem.</span></span><span class="sig-name descname"><span class="pre">CapitalCostSystemOutput</span></span><a class="reference internal" href="_modules/src/capitalCostSystem.html#CapitalCostSystemOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostSystem.CapitalCostSystemOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostSystemOutput.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.capitalCostWell">
+<span id="src-capitalcostwell-module"></span><h2>src.capitalCostWell module<a class="headerlink" href="#module-src.capitalCostWell" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostWell.CapitalCostWell">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostWell.</span></span><span class="sig-name descname"><span class="pre">CapitalCostWell</span></span><a class="reference internal" href="_modules/src/capitalCostWell.html#CapitalCostWell"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWell.CapitalCostWell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostWell.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostWell.CapitalCostWell.cO2Baseline">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cO2Baseline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWell.html#CapitalCostWell.cO2Baseline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWell.CapitalCostWell.cO2Baseline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostWell.CapitalCostWell.cO2Ideal">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cO2Ideal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWell.html#CapitalCostWell.cO2Ideal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWell.CapitalCostWell.cO2Ideal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostWell.CapitalCostWell.waterBaseline">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">waterBaseline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWell.html#CapitalCostWell.waterBaseline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWell.CapitalCostWell.waterBaseline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostWell.CapitalCostWell.waterIdeal">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">waterIdeal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWell.html#CapitalCostWell.waterIdeal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWell.CapitalCostWell.waterIdeal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostWell.baseLine">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostWell.</span></span><span class="sig-name descname"><span class="pre">baseLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wellLength</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWell.html#baseLine"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWell.baseLine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostWell.ideal">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostWell.</span></span><span class="sig-name descname"><span class="pre">ideal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wellLength</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWell.html#ideal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWell.ideal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostWell.well">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostWell.</span></span><span class="sig-name descname"><span class="pre">well</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">well_radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">well_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">success_rate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dC_well</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWell.html#well"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWell.well" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostWell.wellCO2">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostWell.</span></span><span class="sig-name descname"><span class="pre">wellCO2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">well_radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">well_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">success_rate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWell.html#wellCO2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWell.wellCO2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-src.capitalCostWellField">
+<span id="src-capitalcostwellfield-module"></span><h2>src.capitalCostWellField module<a class="headerlink" href="#module-src.capitalCostWellField" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostWellField.CapitalCostWellField">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostWellField.</span></span><span class="sig-name descname"><span class="pre">CapitalCostWellField</span></span><a class="reference internal" href="_modules/src/capitalCostWellField.html#CapitalCostWellField"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.CapitalCostWellField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostWellField.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostWellField.CapitalCostWellField.cO2">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cO2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellField.html#CapitalCostWellField.cO2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.CapitalCostWellField.cO2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostWellField.CapitalCostWellField.cO2MonitoringBaseline">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cO2MonitoringBaseline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellField.html#CapitalCostWellField.cO2MonitoringBaseline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.CapitalCostWellField.cO2MonitoringBaseline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostWellField.CapitalCostWellField.cO2MonitoringIdeal">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cO2MonitoringIdeal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellField.html#CapitalCostWellField.cO2MonitoringIdeal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.CapitalCostWellField.cO2MonitoringIdeal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostWellField.CapitalCostWellField.water">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">water</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellField.html#CapitalCostWellField.water"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.CapitalCostWellField.water" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostWellField.aCO2AMA">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostWellField.</span></span><span class="sig-name descname"><span class="pre">aCO2AMA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellField.html#aCO2AMA"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.aCO2AMA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostWellField.cPermitting">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostWellField.</span></span><span class="sig-name descname"><span class="pre">cPermitting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellField.html#cPermitting"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.cPermitting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostWellField.dCMonitoringCO2Baseline">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostWellField.</span></span><span class="sig-name descname"><span class="pre">dCMonitoringCO2Baseline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitoring_well_radius</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellField.html#dCMonitoringCO2Baseline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.dCMonitoringCO2Baseline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostWellField.dCMonitoringCO2Ideal">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostWellField.</span></span><span class="sig-name descname"><span class="pre">dCMonitoringCO2Ideal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitoring_well_radius</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellField.html#dCMonitoringCO2Ideal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.dCMonitoringCO2Ideal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.capitalCostWellField.dCPermittingCO2">
+<span class="sig-prename descclassname"><span class="pre">src.capitalCostWellField.</span></span><span class="sig-name descname"><span class="pre">dCPermittingCO2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellField.html#dCPermittingCO2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellField.dCPermittingCO2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-src.capitalCostWellStimulation">
+<span id="src-capitalcostwellstimulation-module"></span><h2>src.capitalCostWellStimulation module<a class="headerlink" href="#module-src.capitalCostWellStimulation" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.capitalCostWellStimulation.CapitalCostWellStimulation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.capitalCostWellStimulation.</span></span><span class="sig-name descname"><span class="pre">CapitalCostWellStimulation</span></span><a class="reference internal" href="_modules/src/capitalCostWellStimulation.html#CapitalCostWellStimulation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellStimulation.CapitalCostWellStimulation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CapitalCostWellStimulation.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.capitalCostWellStimulation.CapitalCostWellStimulation.cost">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cost</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/capitalCostWellStimulation.html#CapitalCostWellStimulation.cost"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.capitalCostWellStimulation.CapitalCostWellStimulation.cost" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.coolingCondensingTower">
+<span id="src-coolingcondensingtower-module"></span><h2>src.coolingCondensingTower module<a class="headerlink" href="#module-src.coolingCondensingTower" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.coolingCondensingTower.CoolingCondensingTower">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.coolingCondensingTower.</span></span><span class="sig-name descname"><span class="pre">CoolingCondensingTower</span></span><a class="reference internal" href="_modules/src/coolingCondensingTower.html#CoolingCondensingTower"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.coolingCondensingTower.CoolingCondensingTower" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CoolingCondensingTower.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.coolingCondensingTower.CoolingCondensingTower.computeProcess">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">computeProcess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T_ambient_C</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dT_approach_CT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dT_range_CT</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/coolingCondensingTower.html#CoolingCondensingTower.computeProcess"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.coolingCondensingTower.CoolingCondensingTower.computeProcess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.coolingCondensingTower.CoolingCondensingTower.parasiticPowerFraction">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parasiticPowerFraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T_ambient_C</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dT_approach_CT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dT_range_CT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coolingMode</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/coolingCondensingTower.html#CoolingCondensingTower.parasiticPowerFraction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.coolingCondensingTower.CoolingCondensingTower.parasiticPowerFraction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.coolingCondensingTower.CoolingCondensingTower.specificCaptitalCost">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">specificCaptitalCost</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Q_cooler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Q_condenser</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TDC</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T_ambient_C</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dT_approach_CT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dT_range_CT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coolingMode</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/coolingCondensingTower.html#CoolingCondensingTower.specificCaptitalCost"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.coolingCondensingTower.CoolingCondensingTower.specificCaptitalCost" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.downholePump">
+<span id="src-downholepump-module"></span><h2>src.downholePump module<a class="headerlink" href="#module-src.downholePump" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.downholePump.DownHolePump">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.downholePump.</span></span><span class="sig-name descname"><span class="pre">DownHolePump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/downholePump.html#DownHolePump"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.downholePump.DownHolePump" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>DownHolePump.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.downholePump.DownHolePump.computeSurfacePipeFrictionFactor">
+<span class="sig-name descname"><span class="pre">computeSurfacePipeFrictionFactor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/downholePump.html#DownHolePump.computeSurfacePipeFrictionFactor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.downholePump.DownHolePump.computeSurfacePipeFrictionFactor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.downholePump.DownHolePump.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P_inj_surface</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/downholePump.html#DownHolePump.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.downholePump.DownHolePump.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.downholePump.DownHolePumpOutput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.downholePump.</span></span><span class="sig-name descname"><span class="pre">DownHolePumpOutput</span></span><a class="reference internal" href="_modules/src/downholePump.html#DownHolePumpOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.downholePump.DownHolePumpOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>DownHolePumpOutput.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.downholePump.DownHolePumpOutput.w_pump">
+<span class="sig-name descname"><span class="pre">w_pump</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#src.downholePump.DownHolePumpOutput.w_pump" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.energyConversion">
+<span id="src-energyconversion-module"></span><h2>src.energyConversion module<a class="headerlink" href="#module-src.energyConversion" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.energyConversion.EnergyConversionCPG">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.energyConversion.</span></span><span class="sig-name descname"><span class="pre">EnergyConversionCPG</span></span><a class="reference internal" href="_modules/src/energyConversion.html#EnergyConversionCPG"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.energyConversion.EnergyConversionCPG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>EnergyConversionCPG.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.energyConversion.EnergyConversionCPG.compute">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">compute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/energyConversion.html#EnergyConversionCPG.compute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.energyConversion.EnergyConversionCPG.compute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.energyConversion.EnergyConversionORC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.energyConversion.</span></span><span class="sig-name descname"><span class="pre">EnergyConversionORC</span></span><a class="reference internal" href="_modules/src/energyConversion.html#EnergyConversionORC"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.energyConversion.EnergyConversionORC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>EnergyConversionORC.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.energyConversion.EnergyConversionORC.compute">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">compute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/energyConversion.html#EnergyConversionORC.compute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.energyConversion.EnergyConversionORC.compute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fluidSystemCO2">
+<span id="src-fluidsystemco2-module"></span><h2>src.fluidSystemCO2 module<a class="headerlink" href="#module-src.fluidSystemCO2" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fluidSystemCO2.FluidSystemCO2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fluidSystemCO2.</span></span><span class="sig-name descname"><span class="pre">FluidSystemCO2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fluidSystemCO2.html#FluidSystemCO2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemCO2.FluidSystemCO2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FluidSystemCO2 provides methods to compute the water fluid cycle.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fluidSystemCO2.FluidSystemCO2.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fluidSystemCO2.html#FluidSystemCO2.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemCO2.FluidSystemCO2.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fluidSystemCO2.FluidSystemCO2Output">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fluidSystemCO2.</span></span><span class="sig-name descname"><span class="pre">FluidSystemCO2Output</span></span><a class="reference internal" href="_modules/src/fluidSystemCO2.html#FluidSystemCO2Output"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemCO2.FluidSystemCO2Output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FluidSystemCO2Output.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fluidSystemWater">
+<span id="src-fluidsystemwater-module"></span><h2>src.fluidSystemWater module<a class="headerlink" href="#module-src.fluidSystemWater" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fluidSystemWater.FluidSystemWater">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fluidSystemWater.</span></span><span class="sig-name descname"><span class="pre">FluidSystemWater</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fluidSystemWater.html#FluidSystemWater"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemWater.FluidSystemWater" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FluidSystemWater provides methods to compute the water fluid cycle.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fluidSystemWater.FluidSystemWater.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial_state</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fluidSystemWater.html#FluidSystemWater.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemWater.FluidSystemWater.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fluidSystemWater.FluidSystemWaterOutput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fluidSystemWater.</span></span><span class="sig-name descname"><span class="pre">FluidSystemWaterOutput</span></span><a class="reference internal" href="_modules/src/fluidSystemWater.html#FluidSystemWaterOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemWater.FluidSystemWaterOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FluidSystemWaterOutput.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fluidSystemWaterSolver">
+<span id="src-fluidsystemwatersolver-module"></span><h2>src.fluidSystemWaterSolver module<a class="headerlink" href="#module-src.fluidSystemWaterSolver" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fluidSystemWaterSolver.FluidSystemWaterSolver">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fluidSystemWaterSolver.</span></span><span class="sig-name descname"><span class="pre">FluidSystemWaterSolver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fluidSystemWaterSolver.html#FluidSystemWaterSolver"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemWaterSolver.FluidSystemWaterSolver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FluidSystemWaterSolver provides a solver to determine water injection temperature.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fluidSystemWaterSolver.FluidSystemWaterSolver.minimizeFunction">
+<span class="sig-name descname"><span class="pre">minimizeFunction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial_T</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fluidSystemWaterSolver.html#FluidSystemWaterSolver.minimizeFunction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemWaterSolver.FluidSystemWaterSolver.minimizeFunction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fluidSystemWaterSolver.FluidSystemWaterSolver.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fluidSystemWaterSolver.html#FluidSystemWaterSolver.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemWaterSolver.FluidSystemWaterSolver.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fluidSystemWaterSolver.FluidSystemWaterSolver.solveMinimize">
+<span class="sig-name descname"><span class="pre">solveMinimize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fluidSystemWaterSolver.html#FluidSystemWaterSolver.solveMinimize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fluidSystemWaterSolver.FluidSystemWaterSolver.solveMinimize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fullSystem">
+<span id="src-fullsystem-module"></span><h2>src.fullSystem module<a class="headerlink" href="#module-src.fullSystem" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fullSystem.FullSystemOutput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fullSystem.</span></span><span class="sig-name descname"><span class="pre">FullSystemOutput</span></span><a class="reference internal" href="_modules/src/fullSystem.html#FullSystemOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystem.FullSystemOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FullSystemOutput.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fullSystemCPG">
+<span id="src-fullsystemcpg-module"></span><h2>src.fullSystemCPG module<a class="headerlink" href="#module-src.fullSystemCPG" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fullSystemCPG.FullSystemCPG">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fullSystemCPG.</span></span><span class="sig-name descname"><span class="pre">FullSystemCPG</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid_system_solver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capital_cost_model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemCPG.html#FullSystemCPG"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemCPG.FullSystemCPG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FullSystemCPG.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemCPG.FullSystemCPG.getDefaultCPGSystem">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getDefaultCPGSystem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemCPG.html#FullSystemCPG.getDefaultCPGSystem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemCPG.FullSystemCPG.getDefaultCPGSystem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemCPG.FullSystemCPG.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemCPG.html#FullSystemCPG.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemCPG.FullSystemCPG.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fullSystemORC">
+<span id="src-fullsystemorc-module"></span><h2>src.fullSystemORC module<a class="headerlink" href="#module-src.fullSystemORC" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fullSystemORC.FullSystemORC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fullSystemORC.</span></span><span class="sig-name descname"><span class="pre">FullSystemORC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid_system_solver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capital_cost_model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemORC.html#FullSystemORC"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemORC.FullSystemORC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FullSystemORC.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemORC.FullSystemORC.getDefaultWaterSystem">
+<span class="sig-name descname"><span class="pre">getDefaultWaterSystem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemORC.html#FullSystemORC.getDefaultWaterSystem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemORC.FullSystemORC.getDefaultWaterSystem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemORC.FullSystemORC.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemORC.html#FullSystemORC.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemORC.FullSystemORC.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fullSystemOptMdotBase">
+<span id="src-fullsystemoptmdotbase-module"></span><h2>src.fullSystemOptMdotBase module<a class="headerlink" href="#module-src.fullSystemOptMdotBase" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fullSystemOptMdotBase.FullSystemOptMdotBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fullSystemOptMdotBase.</span></span><span class="sig-name descname"><span class="pre">FullSystemOptMdotBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemOptMdotBase.html#FullSystemOptMdotBase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemOptMdotBase.FullSystemOptMdotBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>FullSystemSolverBase provides a solver to determine the optimum flow
+rate for a minimum or maximum of a given output variable.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemOptMdotBase.FullSystemOptMdotBase.getDirection">
+<span class="sig-name descname"><span class="pre">getDirection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemOptMdotBase.html#FullSystemOptMdotBase.getDirection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemOptMdotBase.FullSystemOptMdotBase.getDirection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemOptMdotBase.FullSystemOptMdotBase.getTargetVar">
+<span class="sig-name descname"><span class="pre">getTargetVar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemOptMdotBase.html#FullSystemOptMdotBase.getTargetVar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemOptMdotBase.FullSystemOptMdotBase.getTargetVar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemOptMdotBase.FullSystemOptMdotBase.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemOptMdotBase.html#FullSystemOptMdotBase.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemOptMdotBase.FullSystemOptMdotBase.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fullSystemSolver">
+<span id="src-fullsystemsolver-module"></span><h2>src.fullSystemSolver module<a class="headerlink" href="#module-src.fullSystemSolver" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fullSystemSolver.FullSystemSolver">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fullSystemSolver.</span></span><span class="sig-name descname"><span class="pre">FullSystemSolver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolver.html#FullSystemSolver"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolver.FullSystemSolver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator" title="src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator"><code class="xref py py-class docutils literal notranslate"><span class="pre">src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator</span></code></a></p>
+<p>FullSystemSolver.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemSolver.FullSystemSolver.getDirection">
+<span class="sig-name descname"><span class="pre">getDirection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolver.html#FullSystemSolver.getDirection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolver.FullSystemSolver.getDirection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemSolver.FullSystemSolver.getTargetVar">
+<span class="sig-name descname"><span class="pre">getTargetVar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">solveResult</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolver.html#FullSystemSolver.getTargetVar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolver.FullSystemSolver.getTargetVar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fullSystemSolverBase">
+<span id="src-fullsystemsolverbase-module"></span><h2>src.fullSystemSolverBase module<a class="headerlink" href="#module-src.fullSystemSolverBase" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fullSystemSolverBase.FullSystemSolverBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fullSystemSolverBase.</span></span><span class="sig-name descname"><span class="pre">FullSystemSolverBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolverBase.html#FullSystemSolverBase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolverBase.FullSystemSolverBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#src.fullSystemOptMdotBase.FullSystemOptMdotBase" title="src.fullSystemOptMdotBase.FullSystemOptMdotBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">src.fullSystemOptMdotBase.FullSystemOptMdotBase</span></code></a></p>
+<p>FullSystemSolverBase provides a solver to solve
+for a given flow rate.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemSolverBase.FullSystemSolverBase.getOutputForMdot">
+<span class="sig-name descname"><span class="pre">getOutputForMdot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial_m_dot</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolverBase.html#FullSystemSolverBase.getOutputForMdot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolverBase.FullSystemSolverBase.getOutputForMdot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fullSystemSolverNM">
+<span id="src-fullsystemsolvernm-module"></span><h2>src.fullSystemSolverNM module<a class="headerlink" href="#module-src.fullSystemSolverNM" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fullSystemSolverNM.FullSystemSolverNM">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fullSystemSolverNM.</span></span><span class="sig-name descname"><span class="pre">FullSystemSolverNM</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolverNM.html#FullSystemSolverNM"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolverNM.FullSystemSolverNM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#src.fullSystemSolverBase.FullSystemSolverBase" title="src.fullSystemSolverBase.FullSystemSolverBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">src.fullSystemSolverBase.FullSystemSolverBase</span></code></a></p>
+<p>FullSystemSolverBase provides a solver to determine the optimum flow rate
+for a minimum or maximum of a given output variable.
+This solver uses the scipy minimize algorithm “Nelder-Mead”.
+!!!!!!!!!!! This solver is not robust to local minima !!!!!!!!!!!</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemSolverNM.FullSystemSolverNM.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_years</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolverNM.html#FullSystemSolverNM.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolverNM.FullSystemSolverNM.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.fullSystemSolverPeakIterator">
+<span id="src-fullsystemsolverpeakiterator-module"></span><h2>src.fullSystemSolverPeakIterator module<a class="headerlink" href="#module-src.fullSystemSolverPeakIterator" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fullSystemSolverPeakIterator.</span></span><span class="sig-name descname"><span class="pre">FullSystemSolverPeakIterator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolverPeakIterator.html#FullSystemSolverPeakIterator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#src.fullSystemOptMdotBase.FullSystemOptMdotBase" title="src.fullSystemOptMdotBase.FullSystemOptMdotBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">src.fullSystemOptMdotBase.FullSystemOptMdotBase</span></code></a></p>
+<p>FullSystemSolverPeakIterator implements a …</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator.getDirection">
+<span class="sig-name descname"><span class="pre">getDirection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolverPeakIterator.html#FullSystemSolverPeakIterator.getDirection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator.getDirection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator.getTargetVar">
+<span class="sig-name descname"><span class="pre">getTargetVar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolverPeakIterator.html#FullSystemSolverPeakIterator.getTargetVar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator.getTargetVar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolverPeakIterator.html#FullSystemSolverPeakIterator.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolverPeakIterator.FullSystemSolverPeakIterator.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.fullSystemSolverPeakIterator.SolverOptimizationType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.fullSystemSolverPeakIterator.</span></span><span class="sig-name descname"><span class="pre">SolverOptimizationType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/fullSystemSolverPeakIterator.html#SolverOptimizationType"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.fullSystemSolverPeakIterator.SolverOptimizationType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.fullSystemSolverPeakIterator.SolverOptimizationType.Maximize">
+<span class="sig-name descname"><span class="pre">Maximize</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#src.fullSystemSolverPeakIterator.SolverOptimizationType.Maximize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.fullSystemSolverPeakIterator.SolverOptimizationType.Minimize">
+<span class="sig-name descname"><span class="pre">Minimize</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">-1</span></em><a class="headerlink" href="#src.fullSystemSolverPeakIterator.SolverOptimizationType.Minimize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.heatExchanger">
+<span id="src-heatexchanger-module"></span><h2>src.heatExchanger module<a class="headerlink" href="#module-src.heatExchanger" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.heatExchanger.HeatExchangerResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.heatExchanger.</span></span><span class="sig-name descname"><span class="pre">HeatExchangerResults</span></span><a class="reference internal" href="_modules/src/heatExchanger.html#HeatExchangerResults"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.heatExchanger.HeatExchangerResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>HeatExchangerResults contains all results information of a heat exchanger.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.heatExchanger.heatExchanger">
+<span class="sig-prename descclassname"><span class="pre">src.heatExchanger.</span></span><span class="sig-name descname"><span class="pre">heatExchanger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T_1_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_dot_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T_2_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_dot_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dT_pinch</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/heatExchanger.html#heatExchanger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.heatExchanger.heatExchanger" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-src.heatExchangerOptMdot">
+<span id="src-heatexchangeroptmdot-module"></span><h2>src.heatExchangerOptMdot module<a class="headerlink" href="#module-src.heatExchangerOptMdot" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.heatExchangerOptMdot.heatExchangerOptMdot">
+<span class="sig-prename descclassname"><span class="pre">src.heatExchangerOptMdot.</span></span><span class="sig-name descname"><span class="pre">heatExchangerOptMdot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T_1_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T_2_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dT_pinch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T_1_out_min</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximizeHeatFromStream</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'2'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/heatExchangerOptMdot.html#heatExchangerOptMdot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.heatExchangerOptMdot.heatExchangerOptMdot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-src.lCOESimple">
+<span id="src-lcoesimple-module"></span><h2>src.lCOESimple module<a class="headerlink" href="#module-src.lCOESimple" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.lCOESimple.LCOESimple">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.lCOESimple.</span></span><span class="sig-name descname"><span class="pre">LCOESimple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/lCOESimple.html#LCOESimple"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.lCOESimple.LCOESimple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>LCOESimple.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.lCOESimple.LCOESimple.lCOE">
+<span class="sig-name descname"><span class="pre">lCOE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">capital_cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_W</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/lCOESimple.html#LCOESimple.lCOE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.lCOESimple.LCOESimple.lCOE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.lCOESimple.LCOESimple.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">capital_cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energy_results</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/lCOESimple.html#LCOESimple.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.lCOESimple.LCOESimple.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.lCOESimple.LCOESimple.specificCapitalCost">
+<span class="sig-name descname"><span class="pre">specificCapitalCost</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">capital_cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_W</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/lCOESimple.html#LCOESimple.specificCapitalCost"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.lCOESimple.LCOESimple.specificCapitalCost" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.lCOESimple.LCOESimpleOutput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.lCOESimple.</span></span><span class="sig-name descname"><span class="pre">LCOESimpleOutput</span></span><a class="reference internal" href="_modules/src/lCOESimple.html#LCOESimpleOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.lCOESimple.LCOESimpleOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>LCOESimpleOutput.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.oRCCycleSupercritPboil">
+<span id="src-orccyclesupercritpboil-module"></span><h2>src.oRCCycleSupercritPboil module<a class="headerlink" href="#module-src.oRCCycleSupercritPboil" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.oRCCycleSupercritPboil.ORCCycleSupercritPboil">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.oRCCycleSupercritPboil.</span></span><span class="sig-name descname"><span class="pre">ORCCycleSupercritPboil</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/oRCCycleSupercritPboil.html#ORCCycleSupercritPboil"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.oRCCycleSupercritPboil.ORCCycleSupercritPboil" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>ORCCycleSupercritPboil.
+Heat/power is output as specific heat and specific work. To find the
+actual power, multiply by the flowrate of geofluid through the system.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.oRCCycleSupercritPboil.ORCCycleSupercritPboil.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initialState</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P_boil_Pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/oRCCycleSupercritPboil.html#ORCCycleSupercritPboil.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.oRCCycleSupercritPboil.ORCCycleSupercritPboil.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.oRCCycleTboil">
+<span id="src-orccycletboil-module"></span><h2>src.oRCCycleTboil module<a class="headerlink" href="#module-src.oRCCycleTboil" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.oRCCycleTboil.ORCCycleTboil">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.oRCCycleTboil.</span></span><span class="sig-name descname"><span class="pre">ORCCycleTboil</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/oRCCycleTboil.html#ORCCycleTboil"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.oRCCycleTboil.ORCCycleTboil" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>ORCCycleTboil.
+Heat/power is output as specific heat and specific work. To find the
+actual power, multiply by the flowrate of geofluid through the system.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.oRCCycleTboil.ORCCycleTboil.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initialState</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T_boil_C</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dT_pinch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/oRCCycleTboil.html#ORCCycleTboil.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.oRCCycleTboil.ORCCycleTboil.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.porousReservoir">
+<span id="src-porousreservoir-module"></span><h2>src.porousReservoir module<a class="headerlink" href="#module-src.porousReservoir" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.porousReservoir.PorousReservoir">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.porousReservoir.</span></span><span class="sig-name descname"><span class="pre">PorousReservoir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelPressureTransient</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelTemperatureDepletion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/porousReservoir.html#PorousReservoir"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.porousReservoir.PorousReservoir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#src.porousReservoirBase.PorousReservoirBase" title="src.porousReservoirBase.PorousReservoirBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">src.porousReservoirBase.PorousReservoirBase</span></code></a></p>
+<p>PorousReservoir holds methods to compute reservoir heat extraction.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.porousReservoir.PorousReservoir.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initialState</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/porousReservoir.html#PorousReservoir.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.porousReservoir.PorousReservoir.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.porousReservoirBase">
+<span id="src-porousreservoirbase-module"></span><h2>src.porousReservoirBase module<a class="headerlink" href="#module-src.porousReservoirBase" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.porousReservoirBase.PorousReservoirBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.porousReservoirBase.</span></span><span class="sig-name descname"><span class="pre">PorousReservoirBase</span></span><a class="reference internal" href="_modules/src/porousReservoirBase.html#PorousReservoirBase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.porousReservoirBase.PorousReservoirBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>PorousReservoirBase.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.porousReservoirResults">
+<span id="src-porousreservoirresults-module"></span><h2>src.porousReservoirResults module<a class="headerlink" href="#module-src.porousReservoirResults" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.porousReservoirResults.PorousReservoirResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.porousReservoirResults.</span></span><span class="sig-name descname"><span class="pre">PorousReservoirResults</span></span><a class="reference internal" href="_modules/src/porousReservoirResults.html#PorousReservoirResults"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.porousReservoirResults.PorousReservoirResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>PorousReservoirResults.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.powerPlantOutput">
+<span id="src-powerplantoutput-module"></span><h2>src.powerPlantOutput module<a class="headerlink" href="#module-src.powerPlantOutput" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.powerPlantOutput.</span></span><span class="sig-name descname"><span class="pre">PowerPlantEnergyOutput</span></span><a class="reference internal" href="_modules/src/powerPlantOutput.html#PowerPlantEnergyOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>PowerPlantEnergyOutput.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.q_boiler">
+<span class="sig-name descname"><span class="pre">q_boiler</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.q_boiler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.q_condenser">
+<span class="sig-name descname"><span class="pre">q_condenser</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.q_condenser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.q_desuperheater">
+<span class="sig-name descname"><span class="pre">q_desuperheater</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.q_desuperheater" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.q_preheater">
+<span class="sig-name descname"><span class="pre">q_preheater</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.q_preheater" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.q_recuperator">
+<span class="sig-name descname"><span class="pre">q_recuperator</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.q_recuperator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.w_condenser">
+<span class="sig-name descname"><span class="pre">w_condenser</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.w_condenser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.w_cooler">
+<span class="sig-name descname"><span class="pre">w_cooler</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.w_cooler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.w_net">
+<span class="sig-name descname"><span class="pre">w_net</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.w_net" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.w_pump">
+<span class="sig-name descname"><span class="pre">w_pump</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.w_pump" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantEnergyOutput.w_turbine">
+<span class="sig-name descname"><span class="pre">w_turbine</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantEnergyOutput.w_turbine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantOutput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.powerPlantOutput.</span></span><span class="sig-name descname"><span class="pre">PowerPlantOutput</span></span><a class="reference internal" href="_modules/src/powerPlantOutput.html#PowerPlantOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.powerPlantOutput.PowerPlantOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#src.powerPlantOutput.PowerPlantEnergyOutput" title="src.powerPlantOutput.PowerPlantEnergyOutput"><code class="xref py py-class docutils literal notranslate"><span class="pre">src.powerPlantOutput.PowerPlantEnergyOutput</span></code></a></p>
+<p>PowerPlantOutput.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantOutput.dT_LMTD_boiler">
+<span class="sig-name descname"><span class="pre">dT_LMTD_boiler</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantOutput.dT_LMTD_boiler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantOutput.dT_LMTD_preheater">
+<span class="sig-name descname"><span class="pre">dT_LMTD_preheater</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantOutput.dT_LMTD_preheater" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantOutput.dT_LMTD_recuperator">
+<span class="sig-name descname"><span class="pre">dT_LMTD_recuperator</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantOutput.dT_LMTD_recuperator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantOutput.dT_range_CT">
+<span class="sig-name descname"><span class="pre">dT_range_CT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantOutput.dT_range_CT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.powerPlantOutput.PowerPlantOutput.state">
+<span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">nan</span></em><a class="headerlink" href="#src.powerPlantOutput.PowerPlantOutput.state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.semiAnalyticalWell">
+<span id="src-semianalyticalwell-module"></span><h2>src.semiAnalyticalWell module<a class="headerlink" href="#module-src.semiAnalyticalWell" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.semiAnalyticalWell.SemiAnalyticalWell">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.semiAnalyticalWell.</span></span><span class="sig-name descname"><span class="pre">SemiAnalyticalWell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T_e_initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dz_total</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dr_total</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_dot_multiplier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/semiAnalyticalWell.html#SemiAnalyticalWell"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.semiAnalyticalWell.SemiAnalyticalWell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>SemiAnalyticalWell to compute heat transport with fluid flow in a well
+and analytical conduction in the surrounding rock.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.semiAnalyticalWell.SemiAnalyticalWell.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">initial_state</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/semiAnalyticalWell.html#SemiAnalyticalWell.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.semiAnalyticalWell.SemiAnalyticalWell.solve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.semiAnalyticalWellResults">
+<span id="src-semianalyticalwellresults-module"></span><h2>src.semiAnalyticalWellResults module<a class="headerlink" href="#module-src.semiAnalyticalWellResults" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.semiAnalyticalWellResults.SemiAnalyticalWellResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.semiAnalyticalWellResults.</span></span><span class="sig-name descname"><span class="pre">SemiAnalyticalWellResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N_dx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fluid</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/semiAnalyticalWellResults.html#SemiAnalyticalWellResults"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.semiAnalyticalWellResults.SemiAnalyticalWellResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>docstring for SemiAnalyticalWellResults.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.semiAnalyticalWellResults.SemiAnalyticalWellResults.createFinalState">
+<span class="sig-name descname"><span class="pre">createFinalState</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/semiAnalyticalWellResults.html#SemiAnalyticalWellResults.createFinalState"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.semiAnalyticalWellResults.SemiAnalyticalWellResults.createFinalState" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.semiAnalyticalWellResults.SemiAnalyticalWellResults.getHeat">
+<span class="sig-name descname"><span class="pre">getHeat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/semiAnalyticalWellResults.html#SemiAnalyticalWellResults.getHeat"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.semiAnalyticalWellResults.SemiAnalyticalWellResults.getHeat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.semiAnalyticalWellResults.SemiAnalyticalWellResults.getPressureAlongWell">
+<span class="sig-name descname"><span class="pre">getPressureAlongWell</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/semiAnalyticalWellResults.html#SemiAnalyticalWellResults.getPressureAlongWell"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.semiAnalyticalWellResults.SemiAnalyticalWellResults.getPressureAlongWell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-src" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "docs/."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="models.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">models package</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="tests.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">tests package</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By GEG-ETH Zürich<br/>
+    
+        &copy; Copyright 2022, Geothermal Energy and Geofluids, ETH Zürich.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

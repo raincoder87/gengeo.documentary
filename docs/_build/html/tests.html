@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tests package &#8212; genGEO Documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="utils package" href="utils.html" />
+    <link rel="prev" title="src package" href="src.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.jpg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="examples/notebook.html">
+   Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tutorials.html">
+   Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="modules.html">
+   genGEO
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="models.html">
+     models package
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="src.html">
+     src package
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     tests package
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="utils.html">
+     utils package
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/tests.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/GEG-ETHZ/genGEO"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/GEG-ETHZ/genGEO/issues/new?title=Issue%20on%20page%20%2Ftests.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/GEG-ETHZ/genGEO/edit/master/docs/tests.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submodules">
+   Submodules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.fluidSystemCO2Test">
+   tests.fluidSystemCO2Test module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.fluidSystemWaterTest">
+   tests.fluidSystemWaterTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.heatExchangerTest">
+   tests.heatExchangerTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.oRCCycleSupercritPboilTest">
+   tests.oRCCycleSupercritPboilTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.oRCCycleTboilTest">
+   tests.oRCCycleTboilTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.reservoirDepletionTest">
+   tests.reservoirDepletionTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.semiAnalyticalWellTest">
+   tests.semiAnalyticalWellTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.testAssertion">
+   tests.testAssertion module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests">
+   Module contents
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>tests package</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submodules">
+   Submodules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.fluidSystemCO2Test">
+   tests.fluidSystemCO2Test module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.fluidSystemWaterTest">
+   tests.fluidSystemWaterTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.heatExchangerTest">
+   tests.heatExchangerTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.oRCCycleSupercritPboilTest">
+   tests.oRCCycleSupercritPboilTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.oRCCycleTboilTest">
+   tests.oRCCycleTboilTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.reservoirDepletionTest">
+   tests.reservoirDepletionTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.semiAnalyticalWellTest">
+   tests.semiAnalyticalWellTest module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.testAssertion">
+   tests.testAssertion module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests">
+   Module contents
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="tests-package">
+<h1>tests package<a class="headerlink" href="#tests-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tests.fluidSystemCO2Test">
+<span id="tests-fluidsystemco2test-module"></span><h2>tests.fluidSystemCO2Test module<a class="headerlink" href="#module-tests.fluidSystemCO2Test" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.fluidSystemCO2Test.FluidSystemCO2Test">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.fluidSystemCO2Test.</span></span><span class="sig-name descname"><span class="pre">FluidSystemCO2Test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemCO2Test.html#FluidSystemCO2Test"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemCO2Test.FluidSystemCO2Test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2Mdot10">
+<span class="sig-name descname"><span class="pre">testFluidSystemCO2Mdot10</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemCO2Test.html#FluidSystemCO2Test.testFluidSystemCO2Mdot10"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2Mdot10" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2Mdot100">
+<span class="sig-name descname"><span class="pre">testFluidSystemCO2Mdot100</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemCO2Test.html#FluidSystemCO2Test.testFluidSystemCO2Mdot100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2Mdot100" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2Mdot200">
+<span class="sig-name descname"><span class="pre">testFluidSystemCO2Mdot200</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemCO2Test.html#FluidSystemCO2Test.testFluidSystemCO2Mdot200"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2Mdot200" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2Mdot80">
+<span class="sig-name descname"><span class="pre">testFluidSystemCO2Mdot80</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemCO2Test.html#FluidSystemCO2Test.testFluidSystemCO2Mdot80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2Mdot80" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2SolverOptMdot">
+<span class="sig-name descname"><span class="pre">testFluidSystemCO2SolverOptMdot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemCO2Test.html#FluidSystemCO2Test.testFluidSystemCO2SolverOptMdot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemCO2Test.FluidSystemCO2Test.testFluidSystemCO2SolverOptMdot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tests.fluidSystemWaterTest">
+<span id="tests-fluidsystemwatertest-module"></span><h2>tests.fluidSystemWaterTest module<a class="headerlink" href="#module-tests.fluidSystemWaterTest" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.fluidSystemWaterTest.FluidSystemWaterTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.fluidSystemWaterTest.</span></span><span class="sig-name descname"><span class="pre">FluidSystemWaterTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemWaterTest.html#FluidSystemWaterTest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemWaterTest.FluidSystemWaterTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.fluidSystemWaterTest.FluidSystemWaterTest.testFluidSystemWaterSolverMdot1">
+<span class="sig-name descname"><span class="pre">testFluidSystemWaterSolverMdot1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemWaterTest.html#FluidSystemWaterTest.testFluidSystemWaterSolverMdot1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemWaterTest.FluidSystemWaterTest.testFluidSystemWaterSolverMdot1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.fluidSystemWaterTest.FluidSystemWaterTest.testFluidSystemWaterSolverMdot40">
+<span class="sig-name descname"><span class="pre">testFluidSystemWaterSolverMdot40</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemWaterTest.html#FluidSystemWaterTest.testFluidSystemWaterSolverMdot40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemWaterTest.FluidSystemWaterTest.testFluidSystemWaterSolverMdot40" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.fluidSystemWaterTest.FluidSystemWaterTest.testFluidSystemWaterSolverOptMdot">
+<span class="sig-name descname"><span class="pre">testFluidSystemWaterSolverOptMdot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/fluidSystemWaterTest.html#FluidSystemWaterTest.testFluidSystemWaterSolverOptMdot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.fluidSystemWaterTest.FluidSystemWaterTest.testFluidSystemWaterSolverOptMdot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tests.heatExchangerTest">
+<span id="tests-heatexchangertest-module"></span><h2>tests.heatExchangerTest module<a class="headerlink" href="#module-tests.heatExchangerTest" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.heatExchangerTest.HeatExchangerTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.heatExchangerTest.</span></span><span class="sig-name descname"><span class="pre">HeatExchangerTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/heatExchangerTest.html#HeatExchangerTest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.heatExchangerTest.HeatExchangerTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.heatExchangerTest.HeatExchangerTest.testHeatExchanger">
+<span class="sig-name descname"><span class="pre">testHeatExchanger</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/heatExchangerTest.html#HeatExchangerTest.testHeatExchanger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.heatExchangerTest.HeatExchangerTest.testHeatExchanger" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.heatExchangerTest.HeatExchangerTest.testHeatExchangerOptMdot">
+<span class="sig-name descname"><span class="pre">testHeatExchangerOptMdot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/heatExchangerTest.html#HeatExchangerTest.testHeatExchangerOptMdot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.heatExchangerTest.HeatExchangerTest.testHeatExchangerOptMdot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tests.oRCCycleSupercritPboilTest">
+<span id="tests-orccyclesupercritpboiltest-module"></span><h2>tests.oRCCycleSupercritPboilTest module<a class="headerlink" href="#module-tests.oRCCycleSupercritPboilTest" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.oRCCycleSupercritPboilTest.ORCCycleSupercritPboilTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.oRCCycleSupercritPboilTest.</span></span><span class="sig-name descname"><span class="pre">ORCCycleSupercritPboilTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/oRCCycleSupercritPboilTest.html#ORCCycleSupercritPboilTest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.oRCCycleSupercritPboilTest.ORCCycleSupercritPboilTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.oRCCycleSupercritPboilTest.ORCCycleSupercritPboilTest.testORCCycleSupercritPboil">
+<span class="sig-name descname"><span class="pre">testORCCycleSupercritPboil</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/oRCCycleSupercritPboilTest.html#ORCCycleSupercritPboilTest.testORCCycleSupercritPboil"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.oRCCycleSupercritPboilTest.ORCCycleSupercritPboilTest.testORCCycleSupercritPboil" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tests.oRCCycleTboilTest">
+<span id="tests-orccycletboiltest-module"></span><h2>tests.oRCCycleTboilTest module<a class="headerlink" href="#module-tests.oRCCycleTboilTest" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.oRCCycleTboilTest.ORCCycleTboilTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.oRCCycleTboilTest.</span></span><span class="sig-name descname"><span class="pre">ORCCycleTboilTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/oRCCycleTboilTest.html#ORCCycleTboilTest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.oRCCycleTboilTest.ORCCycleTboilTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.oRCCycleTboilTest.ORCCycleTboilTest.testORCCycleTboil">
+<span class="sig-name descname"><span class="pre">testORCCycleTboil</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/oRCCycleTboilTest.html#ORCCycleTboilTest.testORCCycleTboil"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.oRCCycleTboilTest.ORCCycleTboilTest.testORCCycleTboil" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.oRCCycleTboilTest.ORCCycleTboilTest.testORCCycleTboilFail">
+<span class="sig-name descname"><span class="pre">testORCCycleTboilFail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/oRCCycleTboilTest.html#ORCCycleTboilTest.testORCCycleTboilFail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.oRCCycleTboilTest.ORCCycleTboilTest.testORCCycleTboilFail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.oRCCycleTboilTest.ORCCycleTboilTest.testParasiticPowerFraction">
+<span class="sig-name descname"><span class="pre">testParasiticPowerFraction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/oRCCycleTboilTest.html#ORCCycleTboilTest.testParasiticPowerFraction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.oRCCycleTboilTest.ORCCycleTboilTest.testParasiticPowerFraction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tests.reservoirDepletionTest">
+<span id="tests-reservoirdepletiontest-module"></span><h2>tests.reservoirDepletionTest module<a class="headerlink" href="#module-tests.reservoirDepletionTest" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.reservoirDepletionTest.ReservoirDepletionTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.reservoirDepletionTest.</span></span><span class="sig-name descname"><span class="pre">ReservoirDepletionTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/reservoirDepletionTest.html#ReservoirDepletionTest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.reservoirDepletionTest.ReservoirDepletionTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.reservoirDepletionTest.ReservoirDepletionTest.testDepletionCurve">
+<span class="sig-name descname"><span class="pre">testDepletionCurve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/reservoirDepletionTest.html#ReservoirDepletionTest.testDepletionCurve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.reservoirDepletionTest.ReservoirDepletionTest.testDepletionCurve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.reservoirDepletionTest.ReservoirDepletionTest.testNoTransient">
+<span class="sig-name descname"><span class="pre">testNoTransient</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/reservoirDepletionTest.html#ReservoirDepletionTest.testNoTransient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.reservoirDepletionTest.ReservoirDepletionTest.testNoTransient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.reservoirDepletionTest.ReservoirDepletionTest.testTransientPNoT">
+<span class="sig-name descname"><span class="pre">testTransientPNoT</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/reservoirDepletionTest.html#ReservoirDepletionTest.testTransientPNoT"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.reservoirDepletionTest.ReservoirDepletionTest.testTransientPNoT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.reservoirDepletionTest.ReservoirDepletionTest.testTransientPT">
+<span class="sig-name descname"><span class="pre">testTransientPT</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/reservoirDepletionTest.html#ReservoirDepletionTest.testTransientPT"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.reservoirDepletionTest.ReservoirDepletionTest.testTransientPT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.reservoirDepletionTest.ReservoirDepletionTest.testTransientTNoP">
+<span class="sig-name descname"><span class="pre">testTransientTNoP</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/reservoirDepletionTest.html#ReservoirDepletionTest.testTransientTNoP"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.reservoirDepletionTest.ReservoirDepletionTest.testTransientTNoP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tests.semiAnalyticalWellTest">
+<span id="tests-semianalyticalwelltest-module"></span><h2>tests.semiAnalyticalWellTest module<a class="headerlink" href="#module-tests.semiAnalyticalWellTest" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.semiAnalyticalWellTest.SemiAnalyticalWellTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.semiAnalyticalWellTest.</span></span><span class="sig-name descname"><span class="pre">SemiAnalyticalWellTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/semiAnalyticalWellTest.html#SemiAnalyticalWellTest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.semiAnalyticalWellTest.SemiAnalyticalWellTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.assertMessages">
+<span class="sig-name descname"><span class="pre">assertMessages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fluid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enthalpy</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/semiAnalyticalWellTest.html#SemiAnalyticalWellTest.assertMessages"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.assertMessages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testInjectionWellCO2">
+<span class="sig-name descname"><span class="pre">testInjectionWellCO2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/semiAnalyticalWellTest.html#SemiAnalyticalWellTest.testInjectionWellCO2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testInjectionWellCO2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testInjectionWellCO2HighQ">
+<span class="sig-name descname"><span class="pre">testInjectionWellCO2HighQ</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/semiAnalyticalWellTest.html#SemiAnalyticalWellTest.testInjectionWellCO2HighQ"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testInjectionWellCO2HighQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testInjectionWellCO2SmallWellR">
+<span class="sig-name descname"><span class="pre">testInjectionWellCO2SmallWellR</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/semiAnalyticalWellTest.html#SemiAnalyticalWellTest.testInjectionWellCO2SmallWellR"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testInjectionWellCO2SmallWellR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testInjectionWellWater">
+<span class="sig-name descname"><span class="pre">testInjectionWellWater</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/semiAnalyticalWellTest.html#SemiAnalyticalWellTest.testInjectionWellWater"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testInjectionWellWater" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testProductionWell">
+<span class="sig-name descname"><span class="pre">testProductionWell</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/semiAnalyticalWellTest.html#SemiAnalyticalWellTest.testProductionWell"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.semiAnalyticalWellTest.SemiAnalyticalWellTest.testProductionWell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tests.testAssertion">
+<span id="tests-testassertion-module"></span><h2>tests.testAssertion module<a class="headerlink" href="#module-tests.testAssertion" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.testAssertion.testAssert">
+<span class="sig-prename descclassname"><span class="pre">tests.testAssertion.</span></span><span class="sig-name descname"><span class="pre">testAssert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0001</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/testAssertion.html#testAssert"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.testAssertion.testAssert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tests" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "docs/."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="src.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">src package</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="utils.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">utils package</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By GEG-ETH Zürich<br/>
+    
+        &copy; Copyright 2022, Geothermal Energy and Geofluids, ETH Zürich.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
