@@ -1,0 +1,40 @@
+# List of Publications
+
+## ETH Zürich Research using genGEO
+
+````{eval-rst}
+.. tabs::
+
+   .. tab:: All Publications
+
+      * Malek, A. E., Adams, B. M., Rossi, E., Schiegg, H. O., & Saar, M. O. (2022). Techno-economic analysis of Advanced Geothermal Systems (AGS). Renewable Energy. [10.1016/j.renene.2022.01.012](https://doi.org/10.1016/j.renene.2022.01.012)
+
+      * Adams, B., Ogland-Hand, J., Bielicki, J. M., Schädle, P., & Saar, M. (2021). Estimating the geothermal electricity generation potential of sedimentary basins using genGEO (the generalizable GEOthermal techno-economic simulator).
+
+   .. tab:: Peer-reviewed publications
+
+      * Malek, A. E., Adams, B. M., Rossi, E., Schiegg, H. O., & Saar, M. O. (2022). Techno-economic analysis of Advanced Geothermal Systems (AGS). Renewable Energy. [10.1016/j.renene.2022.01.012](https://doi.org/10.1016/j.renene.2022.01.012)
+
+   .. tab:: Preprints & Conference
+
+      * Adams, B., Ogland-Hand, J., Bielicki, J. M., Schädle, P., & Saar, M. (2021). Estimating the geothermal electricity generation potential of sedimentary basins using genGEO (the generalizable GEOthermal techno-economic simulator).
+````
+
+
+
+## Non-ETH Zürich Research using genGEO
+````{eval-rst}
+.. tabs::
+
+   .. tab:: All Publications
+
+      * ...
+
+   .. tab:: Peer-reviewed publications
+
+      * ...
+
+   .. tab:: Preprints & Conference
+
+      * ...
+````

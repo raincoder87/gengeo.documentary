@@ -1,0 +1,52 @@
+% gengeo documentation master file, created by
+% sphinx-quickstart on Thu Mar 24 20:55:10 2022.
+% You can adapt this file completely to your liking, but it should at least
+% contain the root `toctree` directive.
+
+
+```{include} pages/README.md
+:relative-images:
+```
+# Quick Links!
+
+```{toctree}
+:caption: 'Getting Started:'
+:maxdepth: 2
+
+pages/installation
+pages/back-of-envelope
+pages/news_updates
+```
+
+```{toctree}
+:caption: 'Tutorials:'
+:maxdepth: 2
+
+pages/basic_tutorials
+pages/advanced_tutorials
+```
+
+```{toctree}
+:caption: 'genGEO API reference:'
+:maxdepth: 2
+
+modules
+```
+
+```{toctree}
+:caption: 'About gengeo:'
+:maxdepth: 2
+pages/citation
+pages/list_of_publications
+pages/developers_tool
+pages/gengeo_bugs_fixes
+GitHub repo <https://github.com/GEG-ETHZ/genGEO>
+pages/license
+pages/contactus
+
+```
+
+# Indices and tables
+- {ref}`search`
+- {ref}`genindex`
+- {ref}`modindex`

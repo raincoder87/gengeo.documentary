@@ -4,50 +4,58 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>genGEO &#8212; genGEO Documentation</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="static/css/theme.css" rel="stylesheet">
+  <link href="static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     
       
 
     
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/clipboard.min.js"></script>
+    <script src="static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="models package" href="models.html" />
-    <link rel="prev" title="Installation" href="installation.html" />
+    <link rel="next" title="models package" href="pages/models.html" />
+    <link rel="prev" title="Advanced Tutorials" href="pages/advanced_tutorials.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -78,7 +86,7 @@ const thebe_selector_output = ".output, .cell_output"
         
       
       
-      <img src="_static/logo.jpg" class="logo" alt="logo">
+      <img src="static/logo.jpg" class="logo" alt="logo">
       
       
     </a>
@@ -89,25 +97,49 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Contents:
+  Getting Started:
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="examples/notebook.html">
-   Jupyter Notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tutorials.html">
-   Tutorials
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="installation.html">
+  <a class="reference internal" href="pages/installation.html">
    Installation
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/back-of-envelope.html">
+   Back-Of-The-Envelope Calculation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/news_updates.html">
+   News and Announcement
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/basic_tutorials.html">
+   Basic Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/advanced_tutorials.html">
+   Advanced Tutorials
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  genGEO API reference:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    genGEO
@@ -119,26 +151,68 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="models.html">
+    <a class="reference internal" href="pages/models.html">
      models package
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="src.html">
+    <a class="reference internal" href="pages/src.html">
      src package
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="tests.html">
+    <a class="reference internal" href="pages/tests.html">
      tests package
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="utils.html">
+    <a class="reference internal" href="pages/utils.html">
      utils package
     </a>
    </li>
   </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About gengeo:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/citation.html">
+   Citing genGEO
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/list_of_publications.html">
+   List of Publications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/developers_tool.html">
+   Developers Tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/gengeo_bugs_fixes.html">
+   known genGEO’s Bugs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/GEG-ETHZ/genGEO">
+   GitHub repo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/license.html">
+   License
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/contactus.html">
+   Contact Us
+  </a>
  </li>
 </ul>
 
@@ -181,7 +255,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/modules.md.txt"><button type="button"
+        <a class="dropdown-buttons" href="sources/modules.md.txt"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -242,87 +316,87 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="gengeo">
+  <section class="tex2jax_ignore mathjax_ignore" id="gengeo">
 <h1>genGEO<a class="headerlink" href="#gengeo" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="models.html">models package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="models.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html#module-models.coolingCondensingTowerMode">models.coolingCondensingTowerMode module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html#module-models.optimizationType">models.optimizationType module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html#module-models.simulationParameters">models.simulationParameters module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html#module-models.wellFieldType">models.wellFieldType module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html#module-models">Module contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/models.html">models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/models.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/models.html#module-models.coolingCondensingTowerMode">models.coolingCondensingTowerMode module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/models.html#module-models.optimizationType">models.optimizationType module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/models.html#module-models.simulationParameters">models.simulationParameters module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/models.html#module-models.wellFieldType">models.wellFieldType module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/models.html#module-models">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="src.html">src package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.capitalCostExploration">src.capitalCostExploration module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.capitalCostSurfacePipes">src.capitalCostSurfacePipes module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.capitalCostSurfacePlantCPG">src.capitalCostSurfacePlantCPG module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.capitalCostSurfacePlantORC">src.capitalCostSurfacePlantORC module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.capitalCostSystem">src.capitalCostSystem module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.capitalCostWell">src.capitalCostWell module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.capitalCostWellField">src.capitalCostWellField module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.capitalCostWellStimulation">src.capitalCostWellStimulation module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.coolingCondensingTower">src.coolingCondensingTower module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.downholePump">src.downholePump module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.energyConversion">src.energyConversion module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fluidSystemCO2">src.fluidSystemCO2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fluidSystemWater">src.fluidSystemWater module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fluidSystemWaterSolver">src.fluidSystemWaterSolver module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fullSystem">src.fullSystem module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fullSystemCPG">src.fullSystemCPG module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fullSystemORC">src.fullSystemORC module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fullSystemOptMdotBase">src.fullSystemOptMdotBase module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fullSystemSolver">src.fullSystemSolver module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fullSystemSolverBase">src.fullSystemSolverBase module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fullSystemSolverNM">src.fullSystemSolverNM module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.fullSystemSolverPeakIterator">src.fullSystemSolverPeakIterator module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.heatExchanger">src.heatExchanger module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.heatExchangerOptMdot">src.heatExchangerOptMdot module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.lCOESimple">src.lCOESimple module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.oRCCycleSupercritPboil">src.oRCCycleSupercritPboil module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.oRCCycleTboil">src.oRCCycleTboil module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.porousReservoir">src.porousReservoir module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.porousReservoirBase">src.porousReservoirBase module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.porousReservoirResults">src.porousReservoirResults module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.powerPlantOutput">src.powerPlantOutput module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.semiAnalyticalWell">src.semiAnalyticalWell module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.semiAnalyticalWellResults">src.semiAnalyticalWellResults module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src">Module contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/src.html">src package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.capitalCostExploration">src.capitalCostExploration module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.capitalCostSurfacePipes">src.capitalCostSurfacePipes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.capitalCostSurfacePlantCPG">src.capitalCostSurfacePlantCPG module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.capitalCostSurfacePlantORC">src.capitalCostSurfacePlantORC module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.capitalCostSystem">src.capitalCostSystem module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.capitalCostWell">src.capitalCostWell module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.capitalCostWellField">src.capitalCostWellField module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.capitalCostWellStimulation">src.capitalCostWellStimulation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.coolingCondensingTower">src.coolingCondensingTower module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.downholePump">src.downholePump module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.energyConversion">src.energyConversion module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fluidSystemCO2">src.fluidSystemCO2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fluidSystemWater">src.fluidSystemWater module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fluidSystemWaterSolver">src.fluidSystemWaterSolver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fullSystem">src.fullSystem module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fullSystemCPG">src.fullSystemCPG module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fullSystemORC">src.fullSystemORC module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fullSystemOptMdotBase">src.fullSystemOptMdotBase module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fullSystemSolver">src.fullSystemSolver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fullSystemSolverBase">src.fullSystemSolverBase module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fullSystemSolverNM">src.fullSystemSolverNM module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.fullSystemSolverPeakIterator">src.fullSystemSolverPeakIterator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.heatExchanger">src.heatExchanger module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.heatExchangerOptMdot">src.heatExchangerOptMdot module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.lCOESimple">src.lCOESimple module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.oRCCycleSupercritPboil">src.oRCCycleSupercritPboil module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.oRCCycleTboil">src.oRCCycleTboil module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.porousReservoir">src.porousReservoir module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.porousReservoirBase">src.porousReservoirBase module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.porousReservoirResults">src.porousReservoirResults module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.powerPlantOutput">src.powerPlantOutput module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.semiAnalyticalWell">src.semiAnalyticalWell module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src.semiAnalyticalWellResults">src.semiAnalyticalWellResults module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html#module-src">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tests.html">tests package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.fluidSystemCO2Test">tests.fluidSystemCO2Test module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.fluidSystemWaterTest">tests.fluidSystemWaterTest module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.heatExchangerTest">tests.heatExchangerTest module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.oRCCycleSupercritPboilTest">tests.oRCCycleSupercritPboilTest module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.oRCCycleTboilTest">tests.oRCCycleTboilTest module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.reservoirDepletionTest">tests.reservoirDepletionTest module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.semiAnalyticalWellTest">tests.semiAnalyticalWellTest module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests.testAssertion">tests.testAssertion module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html#module-tests">Module contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/tests.html">tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#tests-fluidsystemco2test-module">tests.fluidSystemCO2Test module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#tests-fluidsystemwatertest-module">tests.fluidSystemWaterTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#tests-heatexchangertest-module">tests.heatExchangerTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#tests-orccyclesupercritpboiltest-module">tests.oRCCycleSupercritPboilTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#tests-orccycletboiltest-module">tests.oRCCycleTboilTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#tests-reservoirdepletiontest-module">tests.reservoirDepletionTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#tests-semianalyticalwelltest-module">tests.semiAnalyticalWellTest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#tests-testassertion-module">tests.testAssertion module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html#module-tests">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.constantsAndPaths">utils.constantsAndPaths module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.coolPropInterface">utils.coolPropInterface module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.depletionCurve">utils.depletionCurve module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.fluidState">utils.fluidState module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.frictionFactor">utils.frictionFactor module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.getIntersection">utils.getIntersection module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.maxSubcritORCBoilTemp">utils.maxSubcritORCBoilTemp module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.readXlsxData">utils.readXlsxData module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.solver">utils.solver module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils">Module contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/utils.html">utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils.constantsAndPaths">utils.constantsAndPaths module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils.coolPropInterface">utils.coolPropInterface module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils.depletionCurve">utils.depletionCurve module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils.fluidState">utils.fluidState module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils.frictionFactor">utils.frictionFactor module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils.getIntersection">utils.getIntersection module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils.maxSubcritORCBoilTemp">utils.maxSubcritORCBoilTemp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils.readXlsxData">utils.readXlsxData module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils.solver">utils.solver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html#module-utils">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -349,14 +423,14 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="installation.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="pages/advanced_tutorials.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Installation</p>
+            <p class="prev-next-title">Advanced Tutorials</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="models.html" title="next page">
+    <a class='right-next' id="next-link" href="pages/models.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">models package</p>
@@ -381,7 +455,7 @@ const thebe_selector_output = ".output, .cell_output"
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

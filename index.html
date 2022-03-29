@@ -4,49 +4,57 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>genGEO &#8212; genGEO Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>genGEO: generalizable GEOthermal techno-economic simulator &#8212; genGEO Documentation</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="static/css/theme.css" rel="stylesheet">
+  <link href="static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     
       
 
     
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/underscore.js"></script>
+    <script src="static/doctools.js"></script>
+    <script src="static/clipboard.min.js"></script>
+    <script src="static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Jupyter Notebooks" href="examples/notebook.html" />
+    <link rel="next" title="Installation" href="pages/installation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -77,7 +85,7 @@ const thebe_selector_output = ".output, .cell_output"
         
       
       
-      <img src="_static/logo.jpg" class="logo" alt="logo">
+      <img src="static/logo.jpg" class="logo" alt="logo">
       
       
     </a>
@@ -88,25 +96,49 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Contents:
+  Getting Started:
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="examples/notebook.html">
-   Jupyter Notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tutorials.html">
-   Tutorials
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="installation.html">
+  <a class="reference internal" href="pages/installation.html">
    Installation
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/back-of-envelope.html">
+   Back-Of-The-Envelope Calculation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/news_updates.html">
+   News and Announcement
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/basic_tutorials.html">
+   Basic Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/advanced_tutorials.html">
+   Advanced Tutorials
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  genGEO API reference:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="modules.html">
    genGEO
@@ -118,26 +150,68 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="models.html">
+    <a class="reference internal" href="pages/models.html">
      models package
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="src.html">
+    <a class="reference internal" href="pages/src.html">
      src package
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="tests.html">
+    <a class="reference internal" href="pages/tests.html">
      tests package
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="utils.html">
+    <a class="reference internal" href="pages/utils.html">
      utils package
     </a>
    </li>
   </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About gengeo:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/citation.html">
+   Citing genGEO
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/list_of_publications.html">
+   List of Publications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/developers_tool.html">
+   Developers Tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/gengeo_bugs_fixes.html">
+   known genGEO’s Bugs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/GEG-ETHZ/genGEO">
+   GitHub repo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/license.html">
+   License
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pages/contactus.html">
+   Contact Us
+  </a>
  </li>
 </ul>
 
@@ -180,7 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/index.md.txt"><button type="button"
+        <a class="dropdown-buttons" href="sources/index.md.txt"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -230,8 +304,26 @@ const thebe_selector_output = ".output, .cell_output"
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   genGEO
+   <strong>
+    genGEO
+   </strong>
+   :
+   <strong>
+    gen
+   </strong>
+   eralizable
+   <strong>
+    GEO
+   </strong>
+   thermal techno-economic simulator
   </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-links">
+   Quick Links!
+  </a>
+  <ul class="visible nav section-nav flex-column">
+  </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#indices-and-tables">
@@ -248,7 +340,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>genGEO</h1>
+                <h1>genGEO: generalizable GEOthermal techno-economic simulator</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -260,8 +352,26 @@ const thebe_selector_output = ".output, .cell_output"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   genGEO
+   <strong>
+    genGEO
+   </strong>
+   :
+   <strong>
+    gen
+   </strong>
+   eralizable
+   <strong>
+    GEO
+   </strong>
+   thermal techno-economic simulator
   </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-links">
+   Quick Links!
+  </a>
+  <ul class="visible nav section-nav flex-column">
+  </ul>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#indices-and-tables">
@@ -277,53 +387,105 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="gengeo">
-<h1>genGEO<a class="headerlink" href="#gengeo" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://doi.org/10.5281/zenodo.4383138"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.4383138.svg" /></a></p>
-<p><img alt="genGEO logo" src="_images/full_logo.png" /></p>
-<p>genGEO is a coupled reservoir-electricity-cost geothermal simulator. It is an open-source, object-oriented python code which may be extended to include any geothermal or power generation scenario.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="gengeo-generalizable-geothermal-techno-economic-simulator">
+<h1><strong>genGEO</strong>: <strong>gen</strong>eralizable <strong>GEO</strong>thermal techno-economic simulator<a class="headerlink" href="#gengeo-generalizable-geothermal-techno-economic-simulator" title="Permalink to this headline">¶</a></h1>
+<p><img alt="genGEO logo" src="images/full_logo.png" /></p>
+<p><strong>genGEO</strong>, an open-source and object-oriented python library, is a generalizable geothermal simulator, which is used as a techno-economic tool for determining the electric power and cost of a wide range of geothermal systems (i.e., CO2-based Geothermal system, Advanced Geothermal System, …).</p>
+<p>genGEO is an integrated reservoir-electricity-cost geothermal simulator, composed of a reservoir model which simulates the working fluid’s energy and pressure change in the porous reservoir, a well model which simulates the working fluid’s energy and pressure change in the wellbores, a thermodynamic power cycle model which simulates electric power generation, and a cost model which evaluates the capital costs.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This library is under heavy development</p>
+<p>Current Code Versions: <code class="docutils literal notranslate"><span class="pre">0.0.1</span></code>.</p>
+<p>This library is currently under heavy development</p>
 </div>
-<p>For further information, check out <a class="reference internal" href="tutorials.html"><span class="doc">Tutorials</span></a></p>
-<p>Read the installation instruction <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a></p>
-<button title="Launch thebe" class="thebelab-button thebe-launch-button" onclick="initThebe()">Launch thebe</button><div class="thebe highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hi&quot;</span><span class="p">)</span>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Current code repository: <a class="reference external" href="https://doi.org/10.5281/zenodo.4383138"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.4383138.svg" /></a></p>
+<p>Preprint paper:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>https://doi.org/10.26434/chemrxiv.13514440.v1
 </pre></div>
 </div>
+</div>
+<!-- For further information, check out {doc}`./pages/tutorials` -->
+<!-- Read the installation instruction [](automatic-installation:item).-->
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="quick-links">
+<h1>Quick Links!<a class="headerlink" href="#quick-links" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="examples/notebook.html">Jupyter Notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorials.html#example-cpg-system">Example CPG system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/installation.html#automatic-installation">Automatic Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/installation.html#manual-installation">Manual installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/installation.html#run-testing">Run Testing</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#automatic-installation">Automatic Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#manual-installation">Manual installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#testing">Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#contact">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/back-of-envelope.html">Back-Of-The-Envelope Calculation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/news_updates.html">News and Announcement</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pages/basic_tutorials.html">Basic Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/basic_tutorials.html#simulation-parameters">Simulation Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/basic_tutorials.html#run-gengeo">Run genGEO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/basic_tutorials.html#plot-gengeo-output">Plot genGEO output</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="pages/advanced_tutorials.html">Advanced Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/advanced_tutorials.html#example-cpg-system">Example CPG system</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">genGEO API reference:</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">genGEO</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="models.html">models package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html">src package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tests.html">tests package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="utils.html">utils package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/models.html">models package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/src.html">src package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/tests.html">tests package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/utils.html">utils package</a></li>
 </ul>
 </li>
 </ul>
 </div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About gengeo:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pages/citation.html">Citing genGEO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/citation.html#gengeo">genGEO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/citation.html#gengeo-for-advanced-geothermal-system">genGEO for Advanced Geothermal system</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/list_of_publications.html">List of Publications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/list_of_publications.html#eth-zurich-research-using-gengeo">ETH Zürich Research using genGEO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/list_of_publications.html#non-eth-zurich-research-using-gengeo">Non-ETH Zürich Research using genGEO</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/developers_tool.html">Developers Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/developers_tool.html#contributing-with-gengeo-development">Contributing with genGEO development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/developers_tool.html#gengeo-bugs">genGEO Bugs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/gengeo_bugs_fixes.html">known genGEO’s Bugs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/GEG-ETHZ/genGEO">GitHub repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/contactus.html">Contact Us</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/contactus.html#keep-you-updated">keep you updated</a></li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="indices-and-tables">
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -350,10 +512,10 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="examples/notebook.html" title="next page">
+    <a class='right-next' id="next-link" href="pages/installation.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Jupyter Notebooks</p>
+        <p class="prev-next-title">Installation</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -375,7 +537,7 @@ const thebe_selector_output = ".output, .cell_output"
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

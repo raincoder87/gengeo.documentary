@@ -1,0 +1,10 @@
+# genGEO
+
+```{toctree}
+:maxdepth: 4
+
+pages/models
+pages/src
+pages/tests
+pages/utils
+```

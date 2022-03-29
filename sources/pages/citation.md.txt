@@ -1,0 +1,46 @@
+# Citing genGEO
+
+This page lists the references to use if you are using  genGEO for in your publication. For a list of publications that have cited genGEO, please refer to the [List of Publications](./list_of_publications).
+
+## genGEO
+For all publications that use gengeo or a genGEO-based application to produce exciting figures, please cite the following.
+
+* Adams, B., Ogland-Hand, J., Bielicki, J. M., Schädle, P., & Saar, M. (2021). Estimating the geothermal electricity generation potential of sedimentary basins using genGEO (the generalizable GEOthermal techno-economic simulator).
+
+:::{admonition} Download BIBtex...
+:class: dropdown
+```
+@article{Adams2021,
+   title = {Estimating the Geothermal Electricity Generation Potential of Sedimentary Basins using genGEO (the generalizable GEOthermal techno-economic simulator},
+   author = {Benjamin M Adams and Jonathan Ogland-Hand and Jeffrey Bielicki and Philipp Schädle and Martin Saar},
+   journal = {Under Review, Energy & Environmental Science},
+   year = {2021},
+   doi = {https://doi.org/10.26434/chemrxiv.13514440.v1},
+   url = {https://chemrxiv.org/engage/chemrxiv/article-details/60c75392f96a0012f62884aa},
+keywords = {Geothermal Power Plants, Sedimentary Basins, Geothermal Resource Assessment, Techno-economic Assessment ToolsRene, wable Energy, genGEO}
+}
+```
+:::
+
+
+## genGEO for Advanced Geothermal system
+
+* Malek, A. E., Adams, B. M., Rossi, E., Schiegg, H. O., & Saar, M. O. (2022). Techno-economic analysis of Advanced Geothermal Systems (AGS). Renewable Energy. [10.1016/j.renene.2022.01.012](https://doi.org/10.1016/j.renene.2022.01.012)
+
+:::{admonition} Download BIBtex...
+:class: dropdown
+```
+@article{MALEK2022927,
+  title = {Techno-economic analysis of Advanced Geothermal Systems (AGS)},
+  author = {Adam E. Malek and Benjamin M. Adams and Edoardo Rossi and Hans O. Schiegg and Martin O. Saar},
+  journal = {Renewable Energy},
+  volume = {186},
+  pages = {927-943},
+  year = {2022},
+  issn = {0960-1481},
+  doi = {https://doi.org/10.1016/j.renene.2022.01.012},
+  url = {https://www.sciencedirect.com/science/article/pii/S096014812200012X},
+  keywords = {Geothermal energy, Advanced geothermal systems, Closed-loop, Renewable energy, Electric power generation},
+}
+```
+:::

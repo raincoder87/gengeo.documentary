@@ -1,0 +1,28 @@
+# Developers Tools
+
+(contribution-developing:items)=
+## Contributing with genGEO development
+
+We’ll be happy to have you onboard to develop genGEO further. Please let us know what you want to do by going to genGEO’s Ideas Discussions and detailing there your intended development contribution. You can also chat with us in our Gitter community (coming soon) or [](contact-us:items) directly.
+
+We use the [Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+to ensure everything works smoothly. Below is a summary of the necessary steps you need to take:
+
+* Fork  [genGEO repository](https://github.com/GEG-ETHZ/genGEO "genGEO github repository")
+
+* Clone the repository locally at your machine
+
+* Add your changes in a branch named after what’s being done (```lower-case-with-hyphens```)
+
+* Make a pull request to ```gengeo/gengeo```, targeting the ```main``` branch
+
+(bugs:items)=
+## genGEO Bugs
+The genGEO codes are continually updated in response to new scientific challenges and user needs. While the genGEO codes are thoroughly tested before release, exhaustive testing is not possible. Consequently, developers and users occasionally detect programming bugs in a released code version. These bugs are fixed as they become known.
+
+(reporting-bugs:items)=
+### Reporting bugs
+
+Please let us know if something did not work as expected. We'll be happy to investigate the issue and work on a fix. To report a bug, please go to [genGEO's Issues](https://github.com/GEG-ETHZ/genGEO/issues/new) and enter a *descriptive title* and *write your issue with enough details*.
+
+Please provide a *minimum reproducible example* to be more efficient in identifying the bug and fixing it for you. Have you heard about [Markdown](https://guides.github.com/features/mastering-markdown/)? Please use Markdown syntax when writing your issues.

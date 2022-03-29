@@ -1,0 +1,18 @@
+(gengeo-bugs-fixs:items)=
+# known genGEO's Bugs
+
+This page contains a living list of known bugs. Certain bugs may be ignored, as they only affect (often rarely used) program options or combination of features; others may be fixed with only a few code changes; yet others may require more subtantial recoding. Please consult the [developers](https://geg.ethz.ch/people/).
+
+
+```{list-table}
+:widths: 10 5 20 20
+:header-rows: 1
+* - Bug
+  - Type
+  - Description
+  - Proposed Fix
+* - ...
+  - ...
+  - ...
+  - ...
+  ```

@@ -1,0 +1,181 @@
+
+
+# Basic Tutorials
+We are providing series of tutorials in order to help genGEO's user a first in-hand experience.
+We are providing interactive code cells in order enable genGEO users to get their first and quick estimation for many geothermal power system. This option was made available with a kernel (i.e. computation backend) provided by [myBinder](https://mybinder.org) and javascript APIs provided by [JupyterLab](https://github.com/jupyterlab/jupyterlab).
+
+::::{note}
+:class: margin
+
+Once you launch genGEO, you need to wait for a minute (or more depedning on your internet connection speed) until the kernel being **ready**
+
+::::
+
+
+For example, by clicking the button below, you will notice that the code block beneath becomes editable and runnable!
+
+```{thebe-button} Launch genGEO
+```
+
+```{code-block} python
+:class: thebe
+
+print("Welcome to genGEO documentation")
+```
+
+## Simulation Parameters
+In order for genGEO to provide you with accurate results, one needs to feed genGEO with specific parameters for their websites. genGEO itself has default value for each of those parameters as can be viewed below. genGEO's user need to update these value as needed to meet their site-specific conditions.
+
+:::{note}
+:class: dropdown
+
+```
+working_fluid         = None,
+orc_fluid             = None,
+m_dot_IP              = None,
+time_years            = 1.,
+
+# subsurface model
+depth                 = 2500.,
+pump_depth            = 500.,
+well_radius           = 0.205,
+well_spacing          = 707.,
+monitoring_well_radius = 0.108,
+dT_dz                 = 0.035,
+silica_precipitation  = False,
+T_surface_rock        = 15,
+T_ambient_C           = 15.,
+reservoir_thickness   = 100.,
+permeability          = 1.0e-15 * 15000 / 100., # permeability = transmissivity / thickness
+wellFieldType         = WellFieldType._5Spot_SharedNeighbor,
+N_5spot               = 1, #Square-root of number of 5spots which share a central plant in a Many_N configuration. e.g. N=2 is 4 5spots.
+has_surface_gathering_system = True,
+
+
+# power plant model
+max_pump_dP           = 10.e6,
+eta_pump              = 0.75,
+dT_approach           = 7.,
+dT_pinch              = 5.,
+eta_pump_orc          = 0.9,
+eta_turbine_orc       = 0.8,
+eta_pump_co2          = 0.9,
+eta_turbine_co2       = 0.78,
+cooling_mode          = CoolingCondensingTowerMode.Wet,
+
+
+# cost model
+cost_year             = 2019,
+success_rate          = 0.95,
+F_OM                  = 0.045,
+discount_rate         = 0.096,
+lifetime              = 25,
+capacity_factor       = 0.85,
+opt_mode              = OptimizationType.MinimizeCost,
+
+# physical properties
+g                     = 9.81,   # m/s**2
+rho_rock              = 2650.,  # kg/m**3
+c_rock                = 1000.,  # J/kg-K
+k_rock                = 2.1,    # W/m-K
+useWellboreHeatLoss   = True,   # bool
+well_segments         = 100,    # number of well segments
+
+# Friction factor
+well_relative_roughness = 55 * 1e-6             # um
+```
+:::
+
+## Run genGEO
+We are working hard to make ```genGEO``` as an excutable package on [(PyPI)](https://pypi.org/) so that anyone can get their genGEO's result here. Stay tuned!
+
+## Plot genGEO output
+Please activate ```Launch genGEO``` bottom by clicking the button below and wait for a minute for the kernal to be ready. You should then be able to run and edit the code cell in the notebook.
+
+```{thebe-button} Launch genGEO
+```
+```{code-block} python3
+:class: thebe
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+from matplotlib.patches import Rectangle
+
+import os
+
+# Loading the optimization results from genGEO
+massflowrate = np.arange(10, 71)
+power = [0.12,0.13,0.15,0.16,0.17,0.19,0.20,0.22,0.23,0.24,0.26,0.27,0.28,0.29,0.30,0.32,0.33,0.34,0.35,0.36,0.37,0.38,0.39,0.39,0.40,0.41,0.42,0.42,0.43,0.43,0.44,0.44,0.45,0.45,0.45,0.45,0.45,0.45,0.45,0.45,0.45,0.45,0.44,0.44,0.43,0.43,0.42,0.41,0.40,0.39,0.38,0.36,0.35,0.33,0.32,0.30,0.28,0.26,0.24,0.21,0.19]
+lcoe = [1208.82,1088.00,991.08,911.75,845.76,790.11,742.62,701.70,666.15,635.04,607.65,583.41,561.86,542.41,524.90,509.18,495.05,482.34,470.89,460.57,451.29,442.95,435.48,428.82,422.90,417.69,413.14,409.23,405.92,403.20,401.06,399.48,398.46,398.01,398.11,398.80,400.08,401.98,404.52,407.74,411.69,416.43,422.02,428.54,436.09,444.80,454.81,466.31,479.51,494.70,512.23,532.55,556.23,584.05,617.03,656.59,704.70,764.27,839.68,937.94,1070.88]
+
+
+# Plot the data
+plt.rc('text',  weight="normal", size="11")
+
+fig, axs = plt.subplots(1, 1, figsize=(6.5,4))
+fig.subplots_adjust(left=0.15, right=0.88, wspace=0.3)
+
+
+lns1 = axs.plot(massflowrate, power,
+                    'k-',label='NEP [MWe]')
+
+
+ay2 = axs.twinx()  # add second y axis
+lns3 = ay2.plot(massflowrate, lcoe,
+                    'k--',label='LCOE [$/MWh]')
+
+
+axs.add_patch(
+    patches.Rectangle(
+        xy=(35, 0.1),  # point of origin.
+        width=20,   # width
+        height=0.38,  # height
+        linewidth=1,
+        color='green',
+        alpha=0.21,
+        fill='green'
+    )
+)
+
+
+axs.add_patch(
+    patches.Rectangle(
+        xy=(40, 0.1),  # point of origin.
+        width=10,   # width
+        height=0.38,  # height
+        linewidth=1,
+        color='blue',
+        alpha=0.21,
+        fill='blue'
+    )
+)
+
+ay2.text(36, 788, 'Optimal zones for \n       operation', size=12)
+
+# formatting Axis
+axs.set_xlabel(r'Mass flow rate [kg/s]', fontsize=11)
+axs.set_ylabel(r'Net Electric Power, NEP [MWe]', fontsize=11)
+ay2.set_ylabel(r'Levelized Cost of Electricity, LCOE [$/MWh]', fontsize=11)
+
+# Add Legend
+# added these three lines
+lns = lns1+lns3
+labs = [l.get_label() for l in lns]
+# axs.legend(lns, labs, loc='upper left',fontsize=8)
+
+
+legend = axs.legend(lns, labs,bbox_to_anchor=(0.08251, 0.95),  loc='upper left',
+                    fontsize=11 , frameon=None)
+
+frame = legend.get_frame()
+frame.set_color('white')
+frame.set_facecolor('white')
+frame.set_edgecolor('black')
+
+plt.tight_layout()
+
+```
+
+The output figure shown above illustrate the optimization results for the optimal value of the CO2-mass flowrate that corresponding to the maximization of the power output will keeping the Levelized Cost of Electricity at minimal.

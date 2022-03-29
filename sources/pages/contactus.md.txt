@@ -1,0 +1,26 @@
+(contact-us:items)=
+# Contact Us
+
+genGEO is an in-house developed code, which is a proprietary of [Geothermal Energy and Geofluids](https://geg.ethz.ch/people/) at ETH Zürich. For contact please visit: [geg.ethz.ch/people/](https://geg.ethz.ch/people/).
+
+**Physical address**
+
+ETH Zurich
+
+Institute of Geophysics
+
+Geothermal Energy and Geofluids
+
+Sonneggstrasse 5
+
+8092 Zurich
+
+Switzerland
+
+Phone: +41 44 632 34 65
+
+
+## keep you updated
+* Please consult the list to see whether the identified issues affect your work. If so, please follow the instructions [](contribution-developing:items) or request an updated version of the code.
+
+* If you suspect there is a [](bugs:items) in genGEO, please contact the developers and provide them with a detailed description of the error as well as the conditions and computing environment under which the error occurs as described under [](reporting-bugs:items). For a updated list of the bugs and their potiential solution, see [](gengeo-bugs-fixs:items).

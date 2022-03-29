@@ -1,0 +1,39 @@
+# News and Announcement
+
+This page provides the up-to-dates information about genGEO's news, announcements, and further informations that might be interested to genGEO's users.
+
+
+```{note}
+:class: toggle
+For an updated list of the known bugs with their potential fix, please consult [](gengeo-bugs-fixs:items).
+
+```
+
+```{admonition} If you are using Python...
+If you are following the R path, we have included some alternative steps using the [`holepunch` package](https://github.com/karthik/holepunch) which will build your environment using a [rocker base image](https://github.com/rocker-org/rocker) and should, ultimately, be faster to build and launch.
+```
+
+
+* January 2022: Collaborative research at [Geothermal Energy and Geofluids](https://geg.ethz.ch/) with Swiss GeoPower Engineering AG, has developed a new genGEO's modules for the techno-economic analysis of the Advanced Geothermal System (AGS). The output of this collaboration is a new paper  that has been accepted to be published at the Renewable energy journal. [Link](https://www.sciencedirect.com/science/article/pii/S096014812200012X?via%3Dihub)
+
+
+
+* December 2021: [Geothermal Energy and Geofluids](https://geg.ethz.ch/) of ETH Zürich
+received a prestigious funding for further development of genGEO.
+
+::::{container} margin
+
+```{toggle}
+
+:::{note}
+**Abstract**
+
+Sedimentary basins are ubiquitous, naturally porous and permeable, and the geothermal heat in these basins can be extracted with geologic water or CO2 and used to generate electricity. Despite this, the broad potential that these formations may have for electricity generation is unknown. Here we investigate this potential, which required the creation of the generalizable GEOthermal techno-economic simulator (genGEO). genGEO is built with only publicly available data and uses five standalone, but integrated, models that directly simulate all components of geothermal power plants to estimate electricity generation and cost. As a result of this structure, genGEO, or a portion of it, can be applied or extended to study any geothermal power technology. In contrast, the current techno-economic tools for geothermal power plants rely on characterizations of unpublished ASPEN results and are thus not generalizable enough to be applied to sedimentary basin geothermal power plants which use subsurface CO2.
+
+In this study, we present genGEO as open-source software, validate it with industry data, and compare its estimates to other geothermal techno-economic tools. We then apply genGEO to sedimentary basin geothermal resources and find that using CO2 as a subsurface heat extraction fluid compared to water decreases the cost of geothermal electricity across most geologic conditions that are representative of sedimentary basins. Using genGEO results and p50 geologic data, we produce supply curves for sedimentary basin geothermal power plants in the U.S., which suggests that there is present-day potential to profitably increase the capacity of geothermal power by ~10% using water as the subsurface heat extraction fluid. More capacity is available at lower cost when CO2 is used as the subsurface fluid, but realizing this capacity requires geologically storing between ~2 and ~7 MtCO2/MWe. But developing sedimentary basin resources in the short-term using subsurface water may not eliminate options for CO₂-based power plants in the long-term because the least-cost order of sedimentary basins is not the same for both CO2 and water. With sufficient geologic CO2 storage, developing sedimentary basins using CO2- and water-based power plants may be able to proceed in parallel.
+:::
+
+```
+::::
+
+* July 2021: A preprint for genGEO has been published under the following [Link](https://doi.org/10.26434/chemrxiv.13514440.v1).

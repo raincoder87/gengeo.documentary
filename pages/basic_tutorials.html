@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Basic Tutorials &#8212; genGEO Documentation</title>
+    
+  <link href="../static/css/theme.css" rel="stylesheet">
+  <link href="../static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/clipboard.min.js"></script>
+    <script src="../static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Advanced Tutorials" href="advanced_tutorials.html" />
+    <link rel="prev" title="News and Announcement" href="news_updates.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../static/logo.jpg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting Started:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="back-of-envelope.html">
+   Back-Of-The-Envelope Calculation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="news_updates.html">
+   News and Announcement
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Basic Tutorials
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tutorials.html">
+   Advanced Tutorials
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  genGEO API reference:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../modules.html">
+   genGEO
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="models.html">
+     models package
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="src.html">
+     src package
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tests.html">
+     tests package
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="utils.html">
+     utils package
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About gengeo:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="citation.html">
+   Citing genGEO
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="list_of_publications.html">
+   List of Publications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="developers_tool.html">
+   Developers Tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gengeo_bugs_fixes.html">
+   known genGEO’s Bugs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/GEG-ETHZ/genGEO">
+   GitHub repo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="license.html">
+   License
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contactus.html">
+   Contact Us
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../sources/pages/basic_tutorials.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/GEG-ETHZ/genGEO"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/GEG-ETHZ/genGEO/issues/new?title=Issue%20on%20page%20%2Fpages/basic_tutorials.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/GEG-ETHZ/genGEO/edit/master/docs/pages/basic_tutorials.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#simulation-parameters">
+   Simulation Parameters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-gengeo">
+   Run genGEO
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plot-gengeo-output">
+   Plot genGEO output
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Basic Tutorials</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#simulation-parameters">
+   Simulation Parameters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-gengeo">
+   Run genGEO
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plot-gengeo-output">
+   Plot genGEO output
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="basic-tutorials">
+<h1>Basic Tutorials<a class="headerlink" href="#basic-tutorials" title="Permalink to this headline">¶</a></h1>
+<p>We are providing series of tutorials in order to help genGEO’s user a first in-hand experience.
+We are providing interactive code cells in order enable genGEO users to get their first and quick estimation for many geothermal power system. This option was made available with a kernel (i.e. computation backend) provided by <a class="reference external" href="https://mybinder.org">myBinder</a> and javascript APIs provided by <a class="reference external" href="https://github.com/jupyterlab/jupyterlab">JupyterLab</a>.</p>
+<div class="margin admonition note">
+<p class="admonition-title">Note</p>
+<p>Once you launch genGEO, you need to wait for a minute (or more depedning on your internet connection speed) until the kernel being <strong>ready</strong></p>
+</div>
+<p>For example, by clicking the button below, you will notice that the code block beneath becomes editable and runnable!</p>
+<button title="Launch genGEO" class="thebelab-button thebe-launch-button" onclick="initThebe()">Launch genGEO</button><div class="thebe highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome to genGEO documentation&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="simulation-parameters">
+<h2>Simulation Parameters<a class="headerlink" href="#simulation-parameters" title="Permalink to this headline">¶</a></h2>
+<p>In order for genGEO to provide you with accurate results, one needs to feed genGEO with specific parameters for their websites. genGEO itself has default value for each of those parameters as can be viewed below. genGEO’s user need to update these value as needed to meet their site-specific conditions.</p>
+<div class="dropdown admonition note">
+<p class="admonition-title">Note</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">working_fluid</span>         <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="n">orc_fluid</span>             <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="n">m_dot_IP</span>              <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="n">time_years</span>            <span class="o">=</span> <span class="mf">1.</span><span class="p">,</span>
+
+<span class="c1"># subsurface model</span>
+<span class="n">depth</span>                 <span class="o">=</span> <span class="mf">2500.</span><span class="p">,</span>
+<span class="n">pump_depth</span>            <span class="o">=</span> <span class="mf">500.</span><span class="p">,</span>
+<span class="n">well_radius</span>           <span class="o">=</span> <span class="mf">0.205</span><span class="p">,</span>
+<span class="n">well_spacing</span>          <span class="o">=</span> <span class="mf">707.</span><span class="p">,</span>
+<span class="n">monitoring_well_radius</span> <span class="o">=</span> <span class="mf">0.108</span><span class="p">,</span>
+<span class="n">dT_dz</span>                 <span class="o">=</span> <span class="mf">0.035</span><span class="p">,</span>
+<span class="n">silica_precipitation</span>  <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<span class="n">T_surface_rock</span>        <span class="o">=</span> <span class="mi">15</span><span class="p">,</span>
+<span class="n">T_ambient_C</span>           <span class="o">=</span> <span class="mf">15.</span><span class="p">,</span>
+<span class="n">reservoir_thickness</span>   <span class="o">=</span> <span class="mf">100.</span><span class="p">,</span>
+<span class="n">permeability</span>          <span class="o">=</span> <span class="mf">1.0e-15</span> <span class="o">*</span> <span class="mi">15000</span> <span class="o">/</span> <span class="mf">100.</span><span class="p">,</span> <span class="c1"># permeability = transmissivity / thickness</span>
+<span class="n">wellFieldType</span>         <span class="o">=</span> <span class="n">WellFieldType</span><span class="o">.</span><span class="n">_5Spot_SharedNeighbor</span><span class="p">,</span>
+<span class="n">N_5spot</span>               <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">#Square-root of number of 5spots which share a central plant in a Many_N configuration. e.g. N=2 is 4 5spots.</span>
+<span class="n">has_surface_gathering_system</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+
+
+<span class="c1"># power plant model</span>
+<span class="n">max_pump_dP</span>           <span class="o">=</span> <span class="mf">10.e6</span><span class="p">,</span>
+<span class="n">eta_pump</span>              <span class="o">=</span> <span class="mf">0.75</span><span class="p">,</span>
+<span class="n">dT_approach</span>           <span class="o">=</span> <span class="mf">7.</span><span class="p">,</span>
+<span class="n">dT_pinch</span>              <span class="o">=</span> <span class="mf">5.</span><span class="p">,</span>
+<span class="n">eta_pump_orc</span>          <span class="o">=</span> <span class="mf">0.9</span><span class="p">,</span>
+<span class="n">eta_turbine_orc</span>       <span class="o">=</span> <span class="mf">0.8</span><span class="p">,</span>
+<span class="n">eta_pump_co2</span>          <span class="o">=</span> <span class="mf">0.9</span><span class="p">,</span>
+<span class="n">eta_turbine_co2</span>       <span class="o">=</span> <span class="mf">0.78</span><span class="p">,</span>
+<span class="n">cooling_mode</span>          <span class="o">=</span> <span class="n">CoolingCondensingTowerMode</span><span class="o">.</span><span class="n">Wet</span><span class="p">,</span>
+
+
+<span class="c1"># cost model</span>
+<span class="n">cost_year</span>             <span class="o">=</span> <span class="mi">2019</span><span class="p">,</span>
+<span class="n">success_rate</span>          <span class="o">=</span> <span class="mf">0.95</span><span class="p">,</span>
+<span class="n">F_OM</span>                  <span class="o">=</span> <span class="mf">0.045</span><span class="p">,</span>
+<span class="n">discount_rate</span>         <span class="o">=</span> <span class="mf">0.096</span><span class="p">,</span>
+<span class="n">lifetime</span>              <span class="o">=</span> <span class="mi">25</span><span class="p">,</span>
+<span class="n">capacity_factor</span>       <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span>
+<span class="n">opt_mode</span>              <span class="o">=</span> <span class="n">OptimizationType</span><span class="o">.</span><span class="n">MinimizeCost</span><span class="p">,</span>
+
+<span class="c1"># physical properties</span>
+<span class="n">g</span>                     <span class="o">=</span> <span class="mf">9.81</span><span class="p">,</span>   <span class="c1"># m/s**2</span>
+<span class="n">rho_rock</span>              <span class="o">=</span> <span class="mf">2650.</span><span class="p">,</span>  <span class="c1"># kg/m**3</span>
+<span class="n">c_rock</span>                <span class="o">=</span> <span class="mf">1000.</span><span class="p">,</span>  <span class="c1"># J/kg-K</span>
+<span class="n">k_rock</span>                <span class="o">=</span> <span class="mf">2.1</span><span class="p">,</span>    <span class="c1"># W/m-K</span>
+<span class="n">useWellboreHeatLoss</span>   <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>   <span class="c1"># bool</span>
+<span class="n">well_segments</span>         <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>    <span class="c1"># number of well segments</span>
+
+<span class="c1"># Friction factor</span>
+<span class="n">well_relative_roughness</span> <span class="o">=</span> <span class="mi">55</span> <span class="o">*</span> <span class="mf">1e-6</span>             <span class="c1"># um</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="run-gengeo">
+<h2>Run genGEO<a class="headerlink" href="#run-gengeo" title="Permalink to this headline">¶</a></h2>
+<p>We are working hard to make <code class="docutils literal notranslate"><span class="pre">genGEO</span></code> as an excutable package on <a class="reference external" href="https://pypi.org/">(PyPI)</a> so that anyone can get their genGEO’s result here. Stay tuned!</p>
+</section>
+<section id="plot-gengeo-output">
+<h2>Plot genGEO output<a class="headerlink" href="#plot-gengeo-output" title="Permalink to this headline">¶</a></h2>
+<p>Please activate <code class="docutils literal notranslate"><span class="pre">Launch</span> <span class="pre">genGEO</span></code> bottom by clicking the button below and wait for a minute for the kernal to be ready. You should then be able to run and edit the code cell in the notebook.</p>
+<button title="Launch genGEO" class="thebelab-button thebe-launch-button" onclick="initThebe()">Launch genGEO</button><div class="thebe highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.patches</span> <span class="k">as</span> <span class="nn">patches</span>
+<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Rectangle</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1"># Loading the optimization results from genGEO</span>
+<span class="n">massflowrate</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">71</span><span class="p">)</span>
+<span class="n">power</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.12</span><span class="p">,</span><span class="mf">0.13</span><span class="p">,</span><span class="mf">0.15</span><span class="p">,</span><span class="mf">0.16</span><span class="p">,</span><span class="mf">0.17</span><span class="p">,</span><span class="mf">0.19</span><span class="p">,</span><span class="mf">0.20</span><span class="p">,</span><span class="mf">0.22</span><span class="p">,</span><span class="mf">0.23</span><span class="p">,</span><span class="mf">0.24</span><span class="p">,</span><span class="mf">0.26</span><span class="p">,</span><span class="mf">0.27</span><span class="p">,</span><span class="mf">0.28</span><span class="p">,</span><span class="mf">0.29</span><span class="p">,</span><span class="mf">0.30</span><span class="p">,</span><span class="mf">0.32</span><span class="p">,</span><span class="mf">0.33</span><span class="p">,</span><span class="mf">0.34</span><span class="p">,</span><span class="mf">0.35</span><span class="p">,</span><span class="mf">0.36</span><span class="p">,</span><span class="mf">0.37</span><span class="p">,</span><span class="mf">0.38</span><span class="p">,</span><span class="mf">0.39</span><span class="p">,</span><span class="mf">0.39</span><span class="p">,</span><span class="mf">0.40</span><span class="p">,</span><span class="mf">0.41</span><span class="p">,</span><span class="mf">0.42</span><span class="p">,</span><span class="mf">0.42</span><span class="p">,</span><span class="mf">0.43</span><span class="p">,</span><span class="mf">0.43</span><span class="p">,</span><span class="mf">0.44</span><span class="p">,</span><span class="mf">0.44</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.45</span><span class="p">,</span><span class="mf">0.44</span><span class="p">,</span><span class="mf">0.44</span><span class="p">,</span><span class="mf">0.43</span><span class="p">,</span><span class="mf">0.43</span><span class="p">,</span><span class="mf">0.42</span><span class="p">,</span><span class="mf">0.41</span><span class="p">,</span><span class="mf">0.40</span><span class="p">,</span><span class="mf">0.39</span><span class="p">,</span><span class="mf">0.38</span><span class="p">,</span><span class="mf">0.36</span><span class="p">,</span><span class="mf">0.35</span><span class="p">,</span><span class="mf">0.33</span><span class="p">,</span><span class="mf">0.32</span><span class="p">,</span><span class="mf">0.30</span><span class="p">,</span><span class="mf">0.28</span><span class="p">,</span><span class="mf">0.26</span><span class="p">,</span><span class="mf">0.24</span><span class="p">,</span><span class="mf">0.21</span><span class="p">,</span><span class="mf">0.19</span><span class="p">]</span>
+<span class="n">lcoe</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1208.82</span><span class="p">,</span><span class="mf">1088.00</span><span class="p">,</span><span class="mf">991.08</span><span class="p">,</span><span class="mf">911.75</span><span class="p">,</span><span class="mf">845.76</span><span class="p">,</span><span class="mf">790.11</span><span class="p">,</span><span class="mf">742.62</span><span class="p">,</span><span class="mf">701.70</span><span class="p">,</span><span class="mf">666.15</span><span class="p">,</span><span class="mf">635.04</span><span class="p">,</span><span class="mf">607.65</span><span class="p">,</span><span class="mf">583.41</span><span class="p">,</span><span class="mf">561.86</span><span class="p">,</span><span class="mf">542.41</span><span class="p">,</span><span class="mf">524.90</span><span class="p">,</span><span class="mf">509.18</span><span class="p">,</span><span class="mf">495.05</span><span class="p">,</span><span class="mf">482.34</span><span class="p">,</span><span class="mf">470.89</span><span class="p">,</span><span class="mf">460.57</span><span class="p">,</span><span class="mf">451.29</span><span class="p">,</span><span class="mf">442.95</span><span class="p">,</span><span class="mf">435.48</span><span class="p">,</span><span class="mf">428.82</span><span class="p">,</span><span class="mf">422.90</span><span class="p">,</span><span class="mf">417.69</span><span class="p">,</span><span class="mf">413.14</span><span class="p">,</span><span class="mf">409.23</span><span class="p">,</span><span class="mf">405.92</span><span class="p">,</span><span class="mf">403.20</span><span class="p">,</span><span class="mf">401.06</span><span class="p">,</span><span class="mf">399.48</span><span class="p">,</span><span class="mf">398.46</span><span class="p">,</span><span class="mf">398.01</span><span class="p">,</span><span class="mf">398.11</span><span class="p">,</span><span class="mf">398.80</span><span class="p">,</span><span class="mf">400.08</span><span class="p">,</span><span class="mf">401.98</span><span class="p">,</span><span class="mf">404.52</span><span class="p">,</span><span class="mf">407.74</span><span class="p">,</span><span class="mf">411.69</span><span class="p">,</span><span class="mf">416.43</span><span class="p">,</span><span class="mf">422.02</span><span class="p">,</span><span class="mf">428.54</span><span class="p">,</span><span class="mf">436.09</span><span class="p">,</span><span class="mf">444.80</span><span class="p">,</span><span class="mf">454.81</span><span class="p">,</span><span class="mf">466.31</span><span class="p">,</span><span class="mf">479.51</span><span class="p">,</span><span class="mf">494.70</span><span class="p">,</span><span class="mf">512.23</span><span class="p">,</span><span class="mf">532.55</span><span class="p">,</span><span class="mf">556.23</span><span class="p">,</span><span class="mf">584.05</span><span class="p">,</span><span class="mf">617.03</span><span class="p">,</span><span class="mf">656.59</span><span class="p">,</span><span class="mf">704.70</span><span class="p">,</span><span class="mf">764.27</span><span class="p">,</span><span class="mf">839.68</span><span class="p">,</span><span class="mf">937.94</span><span class="p">,</span><span class="mf">1070.88</span><span class="p">]</span>
+
+
+<span class="c1"># Plot the data</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span>  <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;normal&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s2">&quot;11&quot;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">6.5</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mf">0.88</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+
+<span class="n">lns1</span> <span class="o">=</span> <span class="n">axs</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">massflowrate</span><span class="p">,</span> <span class="n">power</span><span class="p">,</span>
+                    <span class="s1">&#39;k-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;NEP [MWe]&#39;</span><span class="p">)</span>
+
+
+<span class="n">ay2</span> <span class="o">=</span> <span class="n">axs</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>  <span class="c1"># add second y axis</span>
+<span class="n">lns3</span> <span class="o">=</span> <span class="n">ay2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">massflowrate</span><span class="p">,</span> <span class="n">lcoe</span><span class="p">,</span>
+                    <span class="s1">&#39;k--&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;LCOE [$/MWh]&#39;</span><span class="p">)</span>
+
+
+<span class="n">axs</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span>
+    <span class="n">patches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">(</span>
+        <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">35</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>  <span class="c1"># point of origin.</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>   <span class="c1"># width</span>
+        <span class="n">height</span><span class="o">=</span><span class="mf">0.38</span><span class="p">,</span>  <span class="c1"># height</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span>
+        <span class="n">alpha</span><span class="o">=</span><span class="mf">0.21</span><span class="p">,</span>
+        <span class="n">fill</span><span class="o">=</span><span class="s1">&#39;green&#39;</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+
+<span class="n">axs</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span>
+    <span class="n">patches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">(</span>
+        <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span>  <span class="c1"># point of origin.</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>   <span class="c1"># width</span>
+        <span class="n">height</span><span class="o">=</span><span class="mf">0.38</span><span class="p">,</span>  <span class="c1"># height</span>
+        <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+        <span class="n">alpha</span><span class="o">=</span><span class="mf">0.21</span><span class="p">,</span>
+        <span class="n">fill</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">ay2</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">36</span><span class="p">,</span> <span class="mi">788</span><span class="p">,</span> <span class="s1">&#39;Optimal zones for </span><span class="se">\n</span><span class="s1">       operation&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+
+<span class="c1"># formatting Axis</span>
+<span class="n">axs</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Mass flow rate [kg/s]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">axs</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Net Electric Power, NEP [MWe]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">ay2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Levelized Cost of Electricity, LCOE [$/MWh]&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+
+<span class="c1"># Add Legend</span>
+<span class="c1"># added these three lines</span>
+<span class="n">lns</span> <span class="o">=</span> <span class="n">lns1</span><span class="o">+</span><span class="n">lns3</span>
+<span class="n">labs</span> <span class="o">=</span> <span class="p">[</span><span class="n">l</span><span class="o">.</span><span class="n">get_label</span><span class="p">()</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lns</span><span class="p">]</span>
+<span class="c1"># axs.legend(lns, labs, loc=&#39;upper left&#39;,fontsize=8)</span>
+
+
+<span class="n">legend</span> <span class="o">=</span> <span class="n">axs</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">lns</span><span class="p">,</span> <span class="n">labs</span><span class="p">,</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.08251</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">),</span>  <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">,</span>
+                    <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span> <span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="n">frame</span> <span class="o">=</span> <span class="n">legend</span><span class="o">.</span><span class="n">get_frame</span><span class="p">()</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">set_edgecolor</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The output figure shown above illustrate the optimization results for the optimal value of the CO2-mass flowrate that corresponding to the maximization of the power output will keeping the Levelized Cost of Electricity at minimal.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "docs/pages"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="news_updates.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">News and Announcement</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="advanced_tutorials.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Advanced Tutorials</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By GEG-ETH Zürich<br/>
+    
+        &copy; Copyright 2022, Geothermal Energy and Geofluids, ETH Zürich.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
